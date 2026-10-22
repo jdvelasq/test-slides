@@ -1,0 +1,111 @@
+/* Lienzo, transición y plantillas de diapositiva (data-layout="..."). */
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--fondo-pagina);
+}
+
+.deck {
+  position: fixed;
+  inset: 0;
+}
+
+.stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: center;
+}
+
+.stage > section {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  padding: var(--margen);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: var(--fuente);
+  font-size: var(--t-texto);
+  line-height: 1.35;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transicion), visibility var(--transicion);
+}
+
+.stage > section.activa {
+  opacity: 1;
+  visibility: visible;
+}
+
+section h1, section h2, section h3, section p, section ul, section ol, section blockquote, section figure {
+  margin: 0;
+}
+
+section h1 { font-size: var(--t-portada); font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; }
+section h2 { font-size: var(--t-titulo); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+section h3 { font-size: var(--t-subtitulo); font-weight: 600; }
+
+section ul, section ol { padding-left: 1.2em; }
+section li + li { margin-top: 0.5em; }
+section li::marker { color: var(--acento); }
+
+section img, section svg, section video { max-width: 100%; max-height: 100%; }
+
+/* portada: título grande, subtítulo y autor */
+[data-layout="portada"] { justify-content: center; gap: 40px; }
+[data-layout="portada"] .subtitulo { font-size: var(--t-subtitulo); color: var(--texto-suave); }
+[data-layout="portada"] .autor { position: absolute; left: var(--margen); bottom: var(--margen); font-size: var(--t-pequeno); color: var(--texto-suave); }
+
+/* seccion: separador entre partes */
+[data-layout="seccion"] { justify-content: center; gap: 24px; }
+[data-layout="seccion"] h2 { font-size: var(--t-portada); }
+[data-layout="seccion"] .etiqueta { font-size: var(--t-pequeno); font-weight: 600; color: var(--acento); text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* titulo-texto: título arriba y contenido debajo */
+[data-layout="titulo-texto"] { gap: var(--hueco); }
+
+/* dos-columnas: título y dos columnas .col */
+[data-layout="dos-columnas"] { gap: var(--hueco); }
+[data-layout="dos-columnas"] .columnas { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: var(--hueco); align-items: center; }
+
+/* imagen: imagen a sangre con pie opcional */
+[data-layout="imagen"] { padding: 0; }
+[data-layout="imagen"] > img,
+[data-layout="imagen"] > figure > img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; object-fit: cover; }
+[data-layout="imagen"] figcaption { position: absolute; left: var(--margen); bottom: 80px; font-size: var(--t-pequeno); color: #fff; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6); }
+
+/* cita: frase grande con autor */
+[data-layout="cita"] { justify-content: center; gap: 48px; }
+[data-layout="cita"] blockquote { font-size: 72px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; }
+[data-layout="cita"] cite { font-size: var(--t-subtitulo); font-style: normal; color: var(--texto-suave); }
+
+/* cifra: un número protagonista y una línea de contexto */
+[data-layout="cifra"] { justify-content: center; align-items: center; text-align: center; gap: 24px; }
+[data-layout="cifra"] .cifra { font-size: var(--t-cifra); font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: var(--acento); }
+[data-layout="cifra"] p { font-size: var(--t-subtitulo); color: var(--texto-suave); }
+
+/* Imprimir desde el navegador: una diapositiva por página */
+@media print {
+  @page { size: 1920px 1080px; margin: 0; }
+  html, body { height: auto; overflow: visible; background: none; }
+  .deck { position: static; }
+  .stage { position: static; width: auto; height: auto; transform: none !important; }
+  .stage > section {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+    break-after: page;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}

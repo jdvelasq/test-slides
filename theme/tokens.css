@@ -1,0 +1,33 @@
+/* Tokens de diseño: cambia aquí colores, tipografía y espaciados de toda la presentación.
+   Todas las medidas están en px del lienzo 1920×1080. */
+:root {
+  --fuente: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
+  --fuente-mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  --fondo-pagina: #000;   /* franjas alrededor del lienzo */
+  --fondo: #fff;
+  --texto: #1d1d1f;
+  --texto-suave: #6e6e73;
+  --acento: #0071e3;
+  --linea: #d2d2d7;
+
+  --t-portada: 128px;
+  --t-titulo: 80px;
+  --t-subtitulo: 44px;
+  --t-texto: 40px;
+  --t-pequeno: 26px;
+  --t-cifra: 300px;
+
+  --margen: 120px;
+  --hueco: 64px;
+  --transicion: 0.45s ease;
+}
+
+/* Variante oscura por diapositiva: <section class="oscuro" ...> */
+.oscuro {
+  --fondo: #000;
+  --texto: #f5f5f7;
+  --texto-suave: #a1a1a6;
+  --acento: #2997ff;
+  --linea: #424245;
+}

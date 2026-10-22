@@ -1,0 +1,55 @@
+/* Piezas reutilizables dentro de cualquier plantilla. */
+
+/* Número de diapositiva (lo inserta el motor) */
+.numero {
+  position: absolute;
+  right: 48px;
+  bottom: 32px;
+  font-size: 18px;
+  color: var(--texto-suave);
+  opacity: 0.6;
+  font-variant-numeric: tabular-nums;
+}
+
+.acento { color: var(--acento); }
+.suave { color: var(--texto-suave); }
+
+/* Fuente o nota al pie de la diapositiva */
+.fuente {
+  position: absolute;
+  left: var(--margen);
+  bottom: 48px;
+  font-size: var(--t-pequeno);
+  color: var(--texto-suave);
+}
+
+section code {
+  font-family: var(--fuente-mono);
+  font-size: 0.9em;
+}
+
+section pre {
+  margin: 0;
+  padding: 40px;
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--texto) 6%, var(--fondo));
+  font-size: 30px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+section table {
+  border-collapse: collapse;
+  font-size: 32px;
+}
+
+section th, section td {
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--linea);
+  text-align: left;
+}
+
+section th {
+  font-weight: 600;
+  color: var(--texto-suave);
+}
