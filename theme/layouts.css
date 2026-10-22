@@ -21,7 +21,7 @@ html, body {
   transform-origin: center;
 }
 
-.stage > section {
+:where(.stage > section) {
   position: absolute;
   inset: 0;
   box-sizing: border-box;
@@ -37,6 +37,7 @@ html, body {
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transicion), visibility var(--transicion);
+  --acento-suave: color-mix(in srgb, var(--acento) 12%, var(--fondo));
 }
 
 .stage > section.activa {
@@ -61,7 +62,24 @@ section img, section svg, section video { max-width: 100%; max-height: 100%; }
 /* portada: título grande, subtítulo y autor */
 [data-layout="portada"] { justify-content: center; gap: 40px; }
 [data-layout="portada"] .subtitulo { font-size: var(--t-subtitulo); color: var(--texto-suave); }
-[data-layout="portada"] .autor { position: absolute; left: var(--margen); bottom: var(--margen); font-size: var(--t-pequeno); color: var(--texto-suave); }
+[data-layout="portada"] .autor { position: absolute; left: var(--margen); bottom: var(--margen); font-size: var(--t-pequeno); color: var(--texto-suave); line-height: 1.5; }
+[data-layout="portada"] .autor strong { color: var(--texto); }
+
+/* afirmacion: título-afirmación arriba, evidencia visual al centro, pie con términos y Pruébelo */
+[data-layout="afirmacion"] { padding-top: 132px; padding-bottom: 84px; gap: 40px; }
+[data-layout="afirmacion"]:not(:has(.linea-tiempo)) { padding-top: 96px; }
+[data-layout="afirmacion"] > h2 { max-width: 1680px; }
+.evidencia { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; gap: var(--hueco); font-size: var(--t-rotulo); }
+.evidencia.vertical { flex-direction: column; gap: 32px; }
+.pie { display: flex; align-items: flex-end; gap: 48px; }
+
+/* lienzo: sin márgenes, para composiciones a pantalla completa */
+[data-layout="lienzo"] { padding: 0; }
+
+/* transicion: título muy grande centrado */
+[data-layout="transicion"] { justify-content: center; align-items: center; text-align: center; gap: 40px; }
+[data-layout="transicion"] h2 { font-size: 160px; }
+[data-layout="transicion"] p { font-size: var(--t-subtitulo); color: var(--texto-suave); letter-spacing: 0.02em; }
 
 /* seccion: separador entre partes */
 [data-layout="seccion"] { justify-content: center; gap: 24px; }

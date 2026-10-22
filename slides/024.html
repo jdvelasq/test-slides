@@ -1,0 +1,35 @@
+<section data-layout="afirmacion" data-bloque="linea" class="s024">
+  <style>
+    .s024 .carpeta { position: relative; width: 640px; height: 360px; }
+    .s024 .carpeta svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .s024 .archivos { position: absolute; left: 60px; right: 60px; top: 90px; display: flex; flex-direction: column; gap: 14px; }
+    .s024 .archivo { display: flex; align-items: center; gap: 16px; padding: 12px 22px; border-radius: 12px; background: var(--fondo); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08); font-family: var(--fuente-mono); font-size: 26px; }
+    .s024 .archivo::before { content: ""; width: 22px; height: 28px; border-radius: 3px; border: 3px solid var(--acento); }
+    .s024 .nombre-carpeta { position: absolute; left: 44px; top: 22px; font-size: 26px; font-weight: 800; color: var(--acento); }
+  </style>
+  <div class="linea-tiempo" data-resaltar="2025"></div>
+  <h2>Una skill empaqueta “cómo hacemos esto aquí” para que el agente lo reutilice.</h2>
+  <div class="evidencia">
+    <div class="carpeta">
+      <svg viewBox="0 0 640 360" aria-hidden="true"><path d="M0 30 Q0 10 20 10 H300 L340 50 H620 Q640 50 640 70 V340 Q640 360 620 360 H20 Q0 360 0 340 Z" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="4"/></svg>
+      <span class="nombre-carpeta">acta-de-comite/</span>
+      <div class="archivos">
+        <div class="archivo">SKILL.md</div>
+        <div class="archivo">plantilla.docx</div>
+        <div class="archivo">verificar.py</div>
+      </div>
+    </div>
+    <ul class="rotulos" style="max-width: 700px">
+      <li><b>Oct. 2025</b> Agent Skills: el agente las carga solo cuando las necesita</li>
+      <li><b>Dic. 2025</b> Estándar abierto entre agentes</li>
+      <li>Para la facultad: una skill por tipo de documento institucional</li>
+    </ul>
+  </div>
+  <div class="pie">
+    <dl class="terminos">
+      <div><dt>Skill</dt> <dd>carpeta con instrucciones, plantillas y scripts que el agente usa bajo demanda.</dd></div>
+      <div><dt>Plugin</dt> <dd>paquete que agrega skills, comandos o conectores a un agente.</dd></div>
+    </dl>
+    <div class="pruebelo"><strong>Claude</strong>: cree una skill “acta-de-comite” con la plantilla de actas de la facultad. Después: “Haz el acta de esta transcripción usando la skill acta-de-comite.”</div>
+  </div>
+</section>

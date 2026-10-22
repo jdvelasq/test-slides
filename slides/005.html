@@ -1,5 +1,36 @@
-<section data-layout="cifra">
-  <div class="cifra">3,2 %</div>
-  <p>Una línea que da contexto a la cifra</p>
-  <p class="fuente">Fuente: indicar aquí la fuente del dato</p>
+<section data-layout="afirmacion" data-bloque="linea" class="s005">
+  <style>
+    .s005 .telefono { width: 400px; height: 440px; border-radius: 48px 48px 0 0; border-bottom: 0; justify-content: flex-end; align-self: flex-end; }
+    .s005 .escrito { padding: 16px 18px; border-radius: 18px; background: var(--gris-suave); }
+    .s005 .sugerido { color: var(--acento); opacity: 0.75; }
+    .s005 .sugerencias { display: flex; gap: 8px; }
+    .s005 .sugerencias span { flex: 1; padding: 8px 4px; border-radius: 10px; background: #e5e5ea; text-align: center; font-size: 20px; }
+    .s005 .sugerencias span:first-child { background: var(--acento); color: #fff; }
+    .s005 .teclado { display: grid; grid-template-columns: repeat(10, 1fr); gap: 5px; }
+    .s005 .teclado i { height: 34px; border-radius: 6px; background: #e5e5ea; }
+  </style>
+  <div class="linea-tiempo" data-resaltar="2017, 2020"></div>
+  <h2>Antes de ChatGPT ya existía casi todo. Faltaba que lo viéramos.</h2>
+  <div class="evidencia">
+    <div class="telefono">
+      <div class="escrito">Nos vemos en la <span class="sugerido">reunión de mañana a las diez. Llevo el informe del semestre, las cifras de matrícula y la propuesta para el comité…</span></div>
+      <div class="sugerencias"><span>reunión</span><span>clase</span><span>tarde</span></div>
+      <div class="teclado"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <ul class="rotulos hitos crece" style="max-width: 1000px">
+      <li><b>2017</b> Transformer: la arquitectura de todos los modelos actuales</li>
+      <li><b>2018–2020</b> BERT, GPT-3: más datos y más escala, mejores resultados</li>
+      <li><b>2020</b> RAG: buscar en documentos antes de responder</li>
+      <li><b>2021</b> Modelos fundacionales: un modelo base para muchas tareas</li>
+    </ul>
+  </div>
+  <div class="pie">
+    <dl class="terminos">
+      <div><dt>LLM</dt> <dd>modelo de lenguaje grande; genera texto prediciendo el siguiente fragmento.</dd></div>
+      <div><dt>Token</dt> <dd>fragmento de texto con el que el modelo lee, escribe y cobra.</dd></div>
+      <div><dt>Embeddings</dt> <dd>números que representan el significado de un texto.</dd></div>
+      <div><dt>RAG</dt> <dd>buscar en documentos propios y dárselos al modelo para responder.</dd></div>
+    </dl>
+  </div>
+  <p class="fuente">Vaswani et al. (2017); Lewis et al. (2020); Bommasani et al., Stanford (2021).</p>
 </section>

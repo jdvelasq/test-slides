@@ -1,0 +1,45 @@
+<section data-layout="afirmacion" data-bloque="analitica" class="s038">
+  <style>
+    .s038 .lado { display: flex; flex-direction: column; gap: 16px; }
+    .s038 .notebook { width: 620px; font-family: var(--fuente-mono); font-size: 20px; }
+    .s038 .notebook .cuerpo { padding: 18px 22px; display: flex; flex-direction: column; gap: 8px; }
+    .s038 .celda { display: flex; gap: 12px; padding: 6px 10px; border-radius: 6px; background: var(--gris-suave); }
+    .s038 .celda small { color: var(--texto-suave); }
+    .s038 .arbol { width: 520px; font-family: var(--fuente-mono); font-size: 28px; line-height: 1.7; }
+    .s038 .arbol .cuerpo div::before { content: "▸ "; color: var(--acento); }
+    .s038 .rotulos { font-size: 26px; }
+  </style>
+  <h2>El agente convierte el notebook improvisado en un pipeline mantenible.</h2>
+  <div class="evidencia" style="gap: 48px">
+    <div class="lado">
+      <div class="panel-titulo">Antes</div>
+      <div class="ventana notebook">
+        <div class="barra">analisis_final_v3.ipynb</div>
+        <div class="cuerpo">
+          <div class="celda"><small>[12]</small>df2 = df[df.x &gt; 0]</div>
+          <div class="celda"><small>[7]</small>temp = df2.merge(df_old)</div>
+          <div class="celda"><small>[31]</small># no borrar!!</div>
+          <div class="celda"><small>[3]</small>final_v3 = temp.dropna()</div>
+          <div class="celda"><small>[ ]</small>modelo.fit(final_v3)</div>
+        </div>
+      </div>
+    </div>
+    <div class="flecha acento">→</div>
+    <div class="lado">
+      <div class="panel-titulo acento">Después</div>
+      <div class="ventana arbol">
+        <div class="cuerpo">
+          <div>datos/</div>
+          <div>src/</div>
+          <div>pruebas/</div>
+          <div>pipeline.yml</div>
+        </div>
+      </div>
+    </div>
+    <ul class="rotulos" style="max-width: 440px">
+      <li>Refactorizar en módulos con pruebas</li>
+      <li>Versionar datos, modelos y pipelines</li>
+      <li>Revisar el código antes de integrar cambios</li>
+    </ul>
+  </div>
+</section>

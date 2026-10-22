@@ -13,43 +13,292 @@
 
 .acento { color: var(--acento); }
 .suave { color: var(--texto-suave); }
+.negrita { font-weight: 700; }
+.mono { font-family: var(--fuente-mono); }
 
-/* Fuente o nota al pie de la diapositiva */
+/* ---------- Piezas del guion ---------- */
+
+/* Franja de línea de tiempo: <div class="linea-tiempo" data-resaltar="2017, 2020"></div>
+   El motor escribe las marcas; data-resaltar lista las que van en el color de acento. */
+.linea-tiempo {
+  position: absolute;
+  top: 48px;
+  left: var(--margen);
+  right: var(--margen);
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--linea);
+  font-size: var(--t-fuente);
+  color: var(--texto-suave);
+}
+.linea-tiempo span { position: relative; padding-top: 14px; }
+.linea-tiempo span::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  border-radius: 50%;
+  background: var(--linea);
+}
+.linea-tiempo span.on { color: var(--acento); font-weight: 700; }
+.linea-tiempo span.on::before { background: var(--acento); transform: scale(1.4); }
+.linea-tiempo.tenue { opacity: 0.45; }
+
+/* Recuadro de términos: <dl class="terminos"><div><dt>…</dt> <dd>…</dd></div></dl> */
+.terminos {
+  margin: 0;
+  padding: 18px 26px;
+  border-radius: 16px;
+  background: var(--gris-suave);
+  font-size: var(--t-terminos);
+  line-height: 1.35;
+  max-width: 900px;
+}
+.terminos dt { display: inline; font-weight: 700; }
+.terminos dt::after { content: ":"; }
+.terminos dd { display: inline; margin: 0; }
+.terminos div + div { margin-top: 6px; }
+
+/* Recuadro Pruébelo: <div class="pruebelo"><strong>Herramienta</strong>: “instrucción”</div> */
+.pruebelo {
+  margin-left: auto;
+  max-width: 920px;
+  padding: 18px 28px 20px;
+  border: 3px solid var(--acento);
+  border-radius: 20px;
+  font-size: var(--t-pruebelo);
+  line-height: 1.35;
+}
+.pruebelo::before {
+  content: "Pruébelo";
+  display: block;
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--acento);
+}
+
+/* Pie de fuente */
 .fuente {
   position: absolute;
   left: var(--margen);
-  bottom: 48px;
-  font-size: var(--t-pequeno);
+  bottom: 30px;
+  font-size: var(--t-fuente);
   color: var(--texto-suave);
 }
 
-section code {
-  font-family: var(--fuente-mono);
-  font-size: 0.9em;
+/* Rótulos: lista de hitos o ideas. <ul class="rotulos"><li><b>2017</b> Transformer: …</li></ul> */
+.rotulos { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 22px; font-size: var(--t-rotulo); line-height: 1.3; }
+.rotulos li + li { margin-top: 0; }
+.rotulos b { font-weight: 700; color: var(--texto-suave); white-space: nowrap; }
+.rotulos b::after { content: " ·"; }
+.rotulos.horizontal { flex-direction: row; gap: 48px; }
+.rotulos.horizontal li { flex: 1; }
+.rotulos.hitos { padding-left: 36px; border-left: 3px solid var(--linea); }
+.rotulos.hitos li { position: relative; }
+.rotulos.hitos li::before {
+  content: "";
+  position: absolute;
+  left: -46px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--acento);
 }
 
+/* Frase destacada */
+.destacado {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  padding-left: 24px;
+  border-left: 6px solid var(--acento);
+}
+
+/* ---------- Bloques de diagrama ---------- */
+
+.fila { display: flex; align-items: center; gap: var(--hueco); }
+.columna { display: flex; flex-direction: column; gap: 24px; }
+.crece { flex: 1; min-width: 0; }
+.rejilla { display: grid; gap: 32px; width: 100%; }
+.rejilla.c2 { grid-template-columns: repeat(2, 1fr); }
+.rejilla.c3 { grid-template-columns: repeat(3, 1fr); }
+.rejilla.c4 { grid-template-columns: repeat(4, 1fr); }
+.rejilla.c5 { grid-template-columns: repeat(5, 1fr); }
+
+.caja {
+  padding: 20px 28px;
+  border: 2px solid var(--linea);
+  border-radius: 16px;
+  background: var(--fondo);
+  line-height: 1.3;
+}
+.caja.acento { border-color: var(--acento); background: var(--acento-suave); color: var(--texto); }
+.caja.llena { border-color: var(--acento); background: var(--acento); color: #fff; }
+
+.tarjeta {
+  padding: 32px;
+  border-radius: 24px;
+  background: var(--gris-suave);
+  line-height: 1.3;
+}
+.tarjeta.acento { background: var(--acento-suave); box-shadow: inset 0 0 0 3px var(--acento); color: var(--texto); }
+
+.panel-titulo {
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--texto-suave);
+}
+.panel-titulo.acento { color: var(--acento); }
+
+.flecha { font-size: 64px; line-height: 1; color: var(--texto-suave); }
+.flecha.acento { color: var(--acento); }
+
+.chip {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: var(--gris-suave);
+  font-size: 22px;
+  line-height: 1.3;
+}
+.chip.acento { background: var(--acento); color: #fff; }
+
+.sello {
+  display: inline-block;
+  padding: 8px 22px;
+  border: 5px solid var(--rojo);
+  border-radius: 10px;
+  color: var(--rojo);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transform: rotate(-8deg);
+  background: color-mix(in srgb, var(--fondo) 80%, transparent);
+}
+
+.pregunta-grande { font-size: 40px; font-weight: 600; text-align: center; line-height: 1.25; }
+
+.punto { display: inline-block; width: 22px; height: 22px; border-radius: 50%; vertical-align: -3px; }
+.punto.verde { background: var(--verde); }
+.punto.amarillo { background: var(--amarillo); }
+.punto.rojo { background: var(--rojo); }
+
+mark { background: #ffe680; color: inherit; padding: 0 6px; border-radius: 6px; font-weight: 700; }
+
+/* ---------- Maquetas de interfaz ---------- */
+
+/* Ventana genérica con barra de título: chat, navegador, terminal, documento */
+.ventana {
+  border-radius: 20px;
+  background: var(--fondo);
+  box-shadow: 0 0 0 2px var(--linea), 0 24px 60px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  font-size: 26px;
+  line-height: 1.4;
+}
+.ventana > .barra {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  background: var(--gris-suave);
+  font-size: 20px;
+  color: var(--texto-suave);
+}
+.ventana > .barra::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #c7c7cc;
+  box-shadow: 22px 0 0 #c7c7cc, 44px 0 0 #c7c7cc;
+  margin-right: 52px;
+}
+.ventana > .cuerpo { padding: 28px 32px; }
+
+.url {
+  flex: 1;
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: var(--fondo);
+  font-size: 20px;
+}
+
+/* Conversación */
+.msg { max-width: 82%; padding: 16px 22px; border-radius: 20px; margin-bottom: 16px; }
+.msg.usuario { margin-left: auto; background: var(--gris-suave); }
+.msg.ia { padding-left: 0; }
+.cursor-texto::after { content: "▍"; color: var(--acento); }
+
+/* Terminal */
+.terminal { background: #1d1d1f; color: #e8e8ed; font-family: var(--fuente-mono); font-size: 24px; line-height: 1.6; }
+.terminal > .barra { background: #2c2c2e; color: #a1a1a6; }
+.terminal .cuerpo p { margin: 0; }
+.terminal .prompt { color: #8ab4f8; }
+.terminal .ok { color: #7ee2a8; }
+.terminal .tenue { color: #8e8e93; }
+
+/* Teléfono */
+.telefono {
+  width: 340px;
+  height: 640px;
+  padding: 20px 16px;
+  border: 12px solid #1d1d1f;
+  border-radius: 56px;
+  background: var(--fondo);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 22px;
+  line-height: 1.35;
+  overflow: hidden;
+}
+.telefono.noche { background: linear-gradient(#141428, #000); color: #f5f5f7; }
+
+/* Documento */
+.doc {
+  padding: 36px 40px;
+  border-radius: 8px;
+  background: #fff;
+  color: #2b2b2e;
+  box-shadow: 0 0 0 2px var(--linea), 0 18px 40px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  line-height: 1.45;
+}
+.barras { display: flex; flex-direction: column; gap: 12px; }
+.barras i { display: block; height: 12px; border-radius: 6px; background: #e3e3e8; }
+.barras i:nth-child(3n) { width: 70%; }
+.barras i:nth-child(4n) { width: 85%; }
+
+/* Tablas */
+section table { border-collapse: collapse; font-size: 28px; }
+section th, section td { padding: 14px 24px; border-bottom: 2px solid var(--linea); text-align: left; vertical-align: top; }
+section th { font-weight: 700; color: var(--texto-suave); }
+section table .col-acento { background: var(--acento-suave); color: var(--acento); font-weight: 700; }
+
+section code { font-family: var(--fuente-mono); font-size: 0.9em; }
 section pre {
   margin: 0;
   padding: 40px;
   border-radius: 24px;
-  background: color-mix(in srgb, var(--texto) 6%, var(--fondo));
+  background: var(--gris-suave);
   font-size: 30px;
   line-height: 1.5;
   overflow: hidden;
 }
 
-section table {
-  border-collapse: collapse;
-  font-size: 32px;
-}
+/* Íconos SVG de trazo: <svg class="icono" viewBox="0 0 24 24">…</svg> */
+.icono { width: 72px; height: 72px; fill: none; stroke: var(--acento); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
-section th, section td {
-  padding: 16px 32px;
-  border-bottom: 1px solid var(--linea);
-  text-align: left;
-}
-
-section th {
-  font-weight: 600;
-  color: var(--texto-suave);
-}
+/* SVG de diagramas: hereda la tipografía */
+svg.diagrama { font-family: var(--fuente); overflow: visible; }

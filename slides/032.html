@@ -1,0 +1,24 @@
+<section data-layout="afirmacion" data-bloque="leer" class="s032">
+  <style>
+    .s032 .tarjetas { display: grid; grid-template-columns: repeat(6, 1fr); gap: 24px; width: 100%; }
+    .s032 .tarjetas .tarjeta { grid-column: span 2; display: flex; flex-direction: column; gap: 14px; padding: 22px 26px; }
+    .s032 .tarjetas .tarjeta:nth-child(4) { grid-column: 2 / span 2; }
+    .s032 .gancho { font-size: 26px; font-weight: 700; line-height: 1.25; }
+    .s032 .sellos { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 20px; }
+    .s032 .sellos .chip { background: var(--fondo); font-size: 20px; }
+    .s032 .sirve { font-size: 21px; color: var(--texto-suave); }
+    .s032 .pregunta { font-size: 34px; font-weight: 800; color: var(--acento); text-align: center; }
+  </style>
+  <h2>El mismo método sirve para lo que un profesor hace cada semana.</h2>
+  <div class="evidencia vertical" style="gap: 24px">
+    <div class="tarjetas">
+      <div class="tarjeta"><div class="gancho">“Claude ahora hace diagramas en draw.io”</div><div class="sellos"><span class="chip">Conector MCP</span><span class="punto verde"></span></div><div class="sirve">Me sirve para… diagramas de procesos y flujos para clase</div></div>
+      <div class="tarjeta"><div class="gancho">“Presentaciones de clase en minutos”</div><div class="sellos"><span class="chip">Complemento de Office o skill</span><span class="punto verde"></span></div><div class="sirve">Me sirve para… preparar y actualizar diapositivas</div></div>
+      <div class="tarjeta"><div class="gancho">“Tu curso convertido en guía de estudio y podcast”</div><div class="sellos"><span class="chip">Gemini Notebook</span><span class="punto amarillo"></span></div><div class="sirve">Me sirve para… guías, audios y cuestionarios</div></div>
+      <div class="tarjeta"><div class="gancho">“Retroalimentación de trabajos con IA”</div><div class="sellos"><span class="chip">Gem o skill con rúbrica</span><span class="punto rojo"></span></div><div class="sirve">Me sirve para… borradores de comentarios; la nota la pone el profesor</div></div>
+      <div class="tarjeta"><div class="gancho">“Transcribe tus clases”</div><div class="sellos"><span class="chip">Whisper en tu equipo</span><span class="punto rojo"></span></div><div class="sirve">Me sirve para… apuntes y subtítulos sin que la grabación salga</div></div>
+    </div>
+    <p class="pregunta">¿Cuál clasificaría usted primero?</p>
+  </div>
+  <p class="fuente">draw.io, “draw.io MCP server and plugins for AI assistants”.</p>
+</section>

@@ -1,21 +1,31 @@
 /* Tokens de diseño: cambia aquí colores, tipografía y espaciados de toda la presentación.
-   Todas las medidas están en px del lienzo 1920×1080. */
+   Todas las medidas están en px del lienzo 1920×1080 (1 pt de PowerPoint ≈ 2 px). */
 :root {
   --fuente: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
   --fuente-mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  --fuente-mano: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
 
   --fondo-pagina: #000;   /* franjas alrededor del lienzo */
   --fondo: #fff;
-  --texto: #1d1d1f;
+  --texto: #2b2b2e;
   --texto-suave: #6e6e73;
-  --acento: #0071e3;
+  --acento: #3a3a3c;
   --linea: #d2d2d7;
+  --gris-suave: #f2f2f4;
+
+  --verde: #2e9e44;
+  --amarillo: #f2b705;
+  --rojo: #d62d20;
 
   --t-portada: 128px;
-  --t-titulo: 80px;
+  --t-titulo: 72px;      /* 36 pt */
   --t-subtitulo: 44px;
-  --t-texto: 40px;
-  --t-pequeno: 26px;
+  --t-texto: 36px;
+  --t-rotulo: 30px;
+  --t-pequeno: 24px;
+  --t-terminos: 22px;
+  --t-pruebelo: 28px;
+  --t-fuente: 20px;      /* 10 pt */
   --t-cifra: 300px;
 
   --margen: 120px;
@@ -23,11 +33,20 @@
   --transicion: 0.45s ease;
 }
 
+/* Color de acento por bloque: <section data-bloque="..."> */
+[data-bloque="apertura"]   { --acento: #3a3a3c; }  /* apertura y cierre: gris oscuro */
+[data-bloque="linea"]      { --acento: #0a66c2; }  /* línea de tiempo: azul */
+[data-bloque="leer"]       { --acento: #0f9488; }  /* leer, decidir e instalar: turquesa */
+[data-bloque="analitica"]  { --acento: #2e8b3d; }  /* analítica y curso: verde */
+[data-bloque="gestion"]    { --acento: #e06c00; }  /* gestión académica: naranja */
+[data-bloque="ventaja"]    { --acento: #7b3fbf; }  /* ventaja competitiva: morado */
+[data-bloque="gobernanza"] { --acento: #c62828; }  /* gobernanza: rojo */
+
 /* Variante oscura por diapositiva: <section class="oscuro" ...> */
 .oscuro {
   --fondo: #000;
   --texto: #f5f5f7;
   --texto-suave: #a1a1a6;
-  --acento: #2997ff;
   --linea: #424245;
+  --gris-suave: #1c1c1e;
 }

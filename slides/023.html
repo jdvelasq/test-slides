@@ -1,0 +1,36 @@
+<section data-layout="afirmacion" data-bloque="linea" class="s023">
+  <style>
+    .s023 > h2 { font-size: 64px; }
+    .s023 .flujos { display: flex; flex-direction: column; gap: 14px; align-items: flex-end; font-size: 26px; font-weight: 600; }
+    .s023 .flujos span::after { content: " →"; color: var(--texto-suave); }
+    .s023 svg { width: 360px; height: 330px; }
+    .s023 .modelo { padding: 24px 44px; font-size: 32px; font-weight: 800; }
+  </style>
+  <div class="linea-tiempo" data-resaltar="2025"></div>
+  <h2>Lo que importa no es la pregunta, sino todo lo que el modelo tiene a la vista.</h2>
+  <div class="evidencia vertical" style="gap: 20px">
+    <div class="fila" style="gap: 24px">
+      <div class="flujos">
+        <span>Instrucciones</span>
+        <span>Documentos</span>
+        <span>Herramientas</span>
+        <span>Historial</span>
+        <span>Decisiones ya tomadas</span>
+      </div>
+      <svg class="diagrama" viewBox="0 0 360 330" aria-hidden="true">
+        <path d="M0 10 L360 125 L360 205 L0 320 Z" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="4" stroke-linejoin="round"/>
+        <text x="150" y="175" text-anchor="middle" style="font-size: 26px; font-weight: 700; fill: var(--acento)">Contexto</text>
+      </svg>
+      <div class="flecha acento">→</div>
+      <div class="caja llena modelo">Modelo</div>
+    </div>
+    <p class="destacado" style="font-size: 26px">Ejemplo real: un archivo de instrucciones guió la actualización curricular de la Maestría en Analítica.</p>
+  </div>
+  <div class="pie">
+    <dl class="terminos">
+      <div><dt>Ingeniería de contexto</dt> <dd>diseñar toda la información que recibe el modelo, no solo la pregunta.</dd></div>
+    </dl>
+    <div class="pruebelo">Antes de pedir nada, escriba <strong>un archivo de instrucciones</strong>: “Este documento lo leen pares académicos. Usa la terminología del Acuerdo 033 de 2007. Nunca inventes cifras: cada cifra va con fuente y año.”</div>
+  </div>
+  <p class="fuente">Anthropic, “Effective context engineering for AI agents” (sep. 2025).</p>
+</section>

@@ -4,19 +4,26 @@
   const W = 1920;
   const H = 1080;
   const BATCH = 10;
+  const MARCAS = ['Antes de 2017', '2017', '2020', '2022', '2023', '2024', '2025', '2026'];
   const stage = document.getElementById('stage');
   let slides = [];
   let current = 0;
 
   const pad = (n) => String(n).padStart(3, '0');
 
-  async function fetchSlide(n) {
-    try {
-      const res = await fetch(`slides/${pad(n)}.html`, { cache: 'no-cache' });
-      return res.ok ? await res.text() : null;
-    } catch {
-      return null;
+  // 404 = no hay más slides; otros fallos (red, 5xx) se reintentan para no cortar el deck.
+  async function fetchSlide(n, intentos = 3) {
+    for (let i = 0; i < intentos; i++) {
+      try {
+        const res = await fetch(`slides/${pad(n)}.html`, { cache: 'no-cache' });
+        if (res.ok) return await res.text();
+        if (res.status === 404) return null;
+      } catch {
+        // reintentar
+      }
+      await new Promise((r) => setTimeout(r, 300 * (i + 1)));
     }
+    return null;
   }
 
   // Pide las slides en lotes paralelos y se detiene en el primer hueco.
@@ -25,12 +32,22 @@
     for (let start = 1; start <= 999; start += BATCH) {
       const nums = [];
       for (let n = start; n < start + BATCH && n <= 999; n++) nums.push(n);
-      const batch = await Promise.all(nums.map(fetchSlide));
+      const batch = await Promise.all(nums.map((n) => fetchSlide(n)));
       const gap = batch.indexOf(null);
       sources.push(...(gap === -1 ? batch : batch.slice(0, gap)));
       if (gap !== -1) break;
     }
     return sources;
+  }
+
+  // Escribe las marcas de cada franja .linea-tiempo y resalta las de data-resaltar.
+  function fillTimelines(root) {
+    root.querySelectorAll('.linea-tiempo').forEach((el) => {
+      const on = (el.dataset.resaltar || '').split(',').map((s) => s.trim());
+      el.innerHTML = MARCAS
+        .map((m) => `<span${on.includes(m) ? ' class="on"' : ''}>${m}</span>`)
+        .join('');
+    });
   }
 
   function build(sources) {
@@ -42,6 +59,7 @@
         section = document.createElement('section');
         section.append(tpl.content);
       }
+      fillTimelines(section);
       const num = document.createElement('span');
       num.className = 'numero';
       num.textContent = i + 1;
