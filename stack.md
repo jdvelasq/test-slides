@@ -3,7 +3,7 @@
 Modelos locales en un Mac con Apple Silicon (M3 Max, 36 GB):
 
 - **Ollama** ejecuta el modelo y lo expone en `http://127.0.0.1:11434`.
-- **Qwen3-Coder 30B-A3B** escribe y edita las slides.
+- **Qwen3.8 27B** escribe y edita las slides, y puede ver capturas.
 - **Aider** es el agente que edita los archivos del repo.
 - **Chrome** muestra el resultado: refrescas la página tras cada cambio.
 
@@ -20,31 +20,31 @@ ollama --version
 ## Paso 2. Descarga el modelo
 
 ```sh
-ollama pull qwen3-coder:30b   # unos 19 GB
+ollama pull qwen3.8:27b   # unos 18 GB
 ```
 
 ## Paso 3. Crea una variante del modelo con 32k de contexto
 
 Ollama usa por defecto un contexto corto. Con menos de 32k, el agente pierde las reglas de `AGENTS.md`. Crea una variante que siempre cargue con 32k.
 
-Crea el archivo `qwen3-coder-32k.Modelfile` en tu carpeta personal (`~`), no en el repo: Ollama solo lo lee al crear el modelo y no debe publicarse en GitHub Pages.
+Crea el archivo `qwen3.8-32k.Modelfile` en tu carpeta personal (`~`), no en el repo: Ollama solo lo lee al crear el modelo y no debe publicarse en GitHub Pages.
 
 ```text
-FROM qwen3-coder:30b
+FROM qwen3.8:27b
 PARAMETER num_ctx 32768
 ```
 
 Crea el modelo y comprueba que aparece:
 
 ```sh
-ollama create qwen3-coder-32k -f ~/qwen3-coder-32k.Modelfile
-ollama list   # debe aparecer qwen3-coder-32k
+ollama create qwen3.8-32k -f ~/qwen3.8-32k.Modelfile
+ollama list   # debe aparecer qwen3.8-32k
 ```
 
 Comprueba que responde:
 
 ```sh
-ollama run qwen3-coder-32k "Responde solo: listo"
+ollama run qwen3.8-32k "Responde solo: listo"
 ```
 
 ## Paso 4. Instala Aider
@@ -65,7 +65,7 @@ uv pip install --python ~/.local/share/uv/tools/aider-chat/bin/python -U scipy
 Crea `.aider.conf.yml` en la raíz del repo:
 
 ```yaml
-model: ollama_chat/qwen3-coder-32k
+model: ollama_chat/qwen3.8-32k
 set-env:
   - OLLAMA_API_BASE=http://127.0.0.1:11434
 edit-format: diff
@@ -79,17 +79,20 @@ Crea `.aider.model.metadata.json` en la raíz del repo, para que Aider conozca e
 
 ```json
 {
-  "ollama_chat/qwen3-coder-32k": {
+  "ollama_chat/qwen3.8-32k": {
     "max_input_tokens": 32768,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "input_cost_per_token": 0,
     "output_cost_per_token": 0,
     "litellm_provider": "ollama_chat",
-    "mode": "chat"
+    "mode": "chat",
+    "supports_vision": true
   }
 }
 ```
+
+`supports_vision` permite pasarle capturas a Aider: `/add .artifacts/playwright/002.png` y pedirle que corrija lo que ve.
 
 Excluye de Git los archivos de Aider, para que no se publiquen en GitHub Pages:
 
