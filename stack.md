@@ -9,15 +9,23 @@ Modelos locales en un Mac con Apple Silicon (M3 Max, 36 GB):
 
 Todos los comandos se ejecutan desde la raíz del repo.
 
-## Paso 1. Instala Ollama y déjalo como servicio
+## Paso 1. Instala Ollama
+
+Descarga la aplicación oficial y cópiala en Aplicaciones:
 
 ```sh
-brew install ollama
-brew services start ollama
-ollama --version
+curl -L -o ~/Downloads/Ollama.dmg https://ollama.com/download/Ollama.dmg
+hdiutil attach ~/Downloads/Ollama.dmg
+cp -R /Volumes/Ollama/Ollama.app /Applications/
+hdiutil detach /Volumes/Ollama
+open -a Ollama
 ```
 
-El servicio arranca solo al iniciar sesión.
+La primera vez que se abre, Ollama pide permiso para instalar el comando `ollama` en la terminal: acéptalo. Desde entonces queda en la barra de menús y arranca solo al iniciar sesión. Comprueba en una terminal nueva:
+
+```sh
+ollama --version
+```
 
 ## Paso 2. Descarga el modelo
 
