@@ -1,11 +1,11 @@
-// Motor de la presentación: carga slides/001.js, 002.js, ... hasta el primer
-// número que falte, escala el lienzo 1920×1080 a la ventana y gestiona la navegación.
+// Motor de la presentación: carga slides/001.js a 999.js en orden, saltando los
+// números que falten; escala el lienzo 1920×1080 a la ventana y gestiona la navegación.
 // Las slides se cargan con <script> (no con fetch) para que index.html funcione
 // también abierto con doble clic (file://).
 (() => {
   const W = 1920;
   const H = 1080;
-  const BATCH = 10;
+  const BATCH = 100;
   const MARCAS = ['Antes de 2017', '2017', '2020', '2022', '2023', '2024', '2025', '2026'];
   const stage = document.getElementById('stage');
   const recibidas = new Map();
@@ -23,7 +23,7 @@
   function loadScript(n) {
     return new Promise((resolve) => {
       const s = document.createElement('script');
-      s.src = `slides/${pad(n)}.js?v=20261022-filas5`;
+      s.src = `slides/${pad(n)}.js?v=20261022-huecos`;
       s.dataset.n = n;
       s.onload = () => resolve(recibidas.get(n) ?? null);
       s.onerror = () => { s.remove(); resolve(null); };
@@ -31,26 +31,14 @@
     });
   }
 
-  // Un fallo puede ser el final del deck o un error de red: se reintenta una vez.
-  async function fetchSlide(n, intentos = 2) {
-    for (let i = 0; i < intentos; i++) {
-      const html = await loadScript(n);
-      if (html !== null) return html;
-      if (i < intentos - 1) await new Promise((r) => setTimeout(r, 200));
-    }
-    return null;
-  }
-
-  // Pide las slides en lotes paralelos y se detiene en el primer hueco.
+  // Pide de 001 a 999 en lotes paralelos y salta los números que falten.
   async function loadSlides() {
     const sources = [];
     for (let start = 1; start <= 999; start += BATCH) {
       const nums = [];
       for (let n = start; n < start + BATCH && n <= 999; n++) nums.push(n);
-      const batch = await Promise.all(nums.map((n) => fetchSlide(n)));
-      const gap = batch.indexOf(null);
-      sources.push(...(gap === -1 ? batch : batch.slice(0, gap)));
-      if (gap !== -1) break;
+      const batch = await Promise.all(nums.map(loadScript));
+      sources.push(...batch.filter((html) => html !== null));
     }
     return sources;
   }

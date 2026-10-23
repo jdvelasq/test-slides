@@ -1,0 +1,37 @@
+diapositiva(`
+<section data-audiencia="comun" data-layout="afirmacion" data-bloque="linea" class="s135">
+  <style>
+    .s135 .telefono { width: 330px; height: 470px; justify-content: flex-start; padding-top: 36px; }
+    .s135 .hora { text-align: center; font-size: 64px; font-weight: 300; margin-bottom: 18px; }
+    .s135 .noti { padding: 14px 18px; border-radius: 18px; background: rgba(255, 255, 255, 0.14); font-size: 20px; }
+    .s135 .noti small { display: block; color: #a1a1a6; font-size: 16px; }
+    .s135 .preguntas { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 38px; font-weight: 800; color: var(--acento); }
+    .s135 .rotulos { font-size: 26px; }
+  </style>
+  <h2>Agentes que nunca se apagan. ¿Cuánto acceso les daríamos?</h2>
+  <div class="evidencia">
+    <div class="telefono noche">
+      <div class="hora">2:14</div>
+      <div class="noti"><small>Agente · hace 3 min</small>Respondí 4 correos</div>
+      <div class="noti"><small>Agente · hace 20 min</small>Agendé una reunión</div>
+      <div class="noti"><small>Agente · hace 1 h</small>Pagué una factura</div>
+    </div>
+    <div class="columna" style="max-width: 980px; gap: 36px">
+      <ul class="rotulos">
+        <li><b>Abiertos</b> OpenClaw, Hermes Agent, OpenJarvis</li>
+        <li><b>De proveedores</b> Gemini Spark, Microsoft Autopilot, OpenAI dots, Meta Muse</li>
+      </ul>
+      <ul class="preguntas">
+        <li>¿Qué permisos tiene?</li>
+        <li>¿Dónde guarda la memoria?</li>
+        <li>¿Quién responde por lo que hace?</li>
+      </ul>
+    </div>
+  </div>
+  <div class="pie">
+    <dl class="terminos" style="max-width: 1300px">
+      <div><dt>Agente personal persistente</dt> <dd>corre siempre, recuerda, accede a tus cuentas y actúa por iniciativa propia.</dd></div>
+    </dl>
+  </div>
+</section>
+`);

@@ -1,0 +1,41 @@
+diapositiva(`
+<section data-audiencia="comun" data-layout="afirmacion" data-bloque="linea" class="s117">
+  <style>
+    .s117 .tablero { width: 520px; height: 360px; box-sizing: border-box; padding: 30px 36px; border: 14px solid #b9a27d; border-radius: 10px; background: #fbfbf8; font-family: var(--fuente-mano); font-size: 30px; line-height: 1.5; color: #1f4f9a; transform: rotate(-2deg); }
+    .s117 .tablero span { display: block; }
+    .s117 .notas { width: 470px; height: 360px; box-sizing: border-box; padding: 28px 32px; font-size: 24px; }
+    .s117 .notas ul { padding-left: 1.1em; margin: 10px 0 0; }
+    .s117 .notas li + li { margin-top: 6px; }
+  </style>
+  <h2>Ya no solo lee: ve, escucha y habla.</h2>
+  <div class="evidencia" style="justify-content: flex-start; gap: 40px">
+    <div class="tablero">
+      <span>Regresión lineal →</span>
+      <span>  y = β0 + β1x + ε</span>
+      <span>supuestos: lineal, indep.,</span>
+      <span>  varianza cte, normal</span>
+      <span>¡ojo! outliers + R² ≠ causal</span>
+    </div>
+    <div class="flecha acento">→</div>
+    <div class="ventana notas">
+      <b>Apuntes · Regresión lineal</b>
+      <ul>
+        <li><b>Modelo</b>: y = β₀ + β₁x + ε</li>
+        <li><b>Supuestos</b>: linealidad, independencia, varianza constante, normalidad</li>
+        <li><b>Cuidado</b>: valores atípicos; un R² alto no implica causalidad</li>
+      </ul>
+    </div>
+    <ul class="rotulos crece" style="margin-left: 24px">
+      <li><b>Sep. 2022</b> Whisper: transcribe voz, y se puede descargar</li>
+      <li><b>Sep. 2023</b> Entiende imágenes</li>
+      <li><b>May. 2024</b> Conversa por voz en tiempo real</li>
+    </ul>
+  </div>
+  <div class="pie">
+    <dl class="terminos">
+      <div><dt>Multimodal</dt> <dd>entiende o genera texto, imagen, audio y video.</dd></div>
+    </dl>
+    <div class="pruebelo"><strong>Gemini en el celular</strong>: fotografíe el tablero al final de la clase y pida “convierte esto en apuntes ordenados, con los conceptos clave en negrita”.</div>
+  </div>
+</section>
+`);

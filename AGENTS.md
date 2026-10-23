@@ -17,8 +17,8 @@ assets/              imágenes, vídeos, SVG y datos
 
 ## Reglas
 
-1. **Numeración.** Cada diapositiva es `slides/NNN.js` con tres dígitos, consecutiva desde `001` y sin huecos. El motor carga hasta el primer número que falte; todo lo que venga después de un hueco no se muestra.
-2. **Insertar, borrar o mover** una diapositiva obliga a renumerar las siguientes con `git mv`. Al insertar, renombra desde la última hacia atrás para no sobrescribir archivos. Al renumerar, cambia también la clase de ámbito `sNNN` dentro del archivo (ver regla 6). "La slide 5" es siempre `slides/005.js`.
+1. **Numeración.** Cada diapositiva es `slides/NNN.js` con tres dígitos, de `001` a `999`. El número del archivo solo fija el orden: se permiten huecos y el motor los salta. El número que se ve en pantalla (y en `#/N`) es la posición en la presentación, no el del archivo: hoy `slides/108.js` se muestra como la 8.
+2. **Insertar** una diapositiva: usa un número libre entre las dos vecinas. **Borrar** no obliga a renumerar. Si hace falta renumerar, usa `git mv`, renombra desde la última hacia atrás para no sobrescribir archivos y cambia también la clase de ámbito `sNNN` dentro del archivo (ver regla 6). Cuando el usuario diga "la slide 108", se refiere a `slides/108.js`; si hay duda entre archivo y posición en pantalla, pregunta.
 3. **Formato del archivo.** Cada archivo envuelve un único `<section data-layout="..." data-bloque="...">` (sin `<html>`, `<head>` ni `<body>`) en una llamada a `diapositiva`:
 
    ```js
@@ -104,7 +104,7 @@ Abrir `index.html` con doble clic (funciona sin servidor). También sirve un ser
 python3 -m http.server 8000
 ```
 
-Navegación: flechas, espacio, clic o deslizar. `#/5` en la URL abre la diapositiva 5.
+Navegación: flechas, espacio, clic o deslizar. `#/5` en la URL abre la quinta diapositiva en orden (no necesariamente `slides/005.js`).
 
 ## Revisión visual con Playwright (Codex y Claude)
 
