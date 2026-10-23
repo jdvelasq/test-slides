@@ -54,6 +54,12 @@ uv tool install --python 3.12 aider-chat
 aider --version
 ```
 
+En macOS 27, la versión de scipy que fija Aider falla al cargar (`ImportError` en `_svdp.py`). Actualízala dentro del entorno de Aider; repite esto si reinstalas o actualizas Aider:
+
+```sh
+uv pip install --python ~/.local/share/uv/tools/aider-chat/bin/python -U scipy
+```
+
 ## Paso 5. Configura Aider para este proyecto
 
 Crea `.aider.conf.yml` en la raíz del repo:
