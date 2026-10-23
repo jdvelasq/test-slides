@@ -1,0 +1,2 @@
+# Herramientas de revisión local; no son dependencias del sitio.
+playwright==1.60.0
