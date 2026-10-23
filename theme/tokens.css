@@ -8,39 +8,56 @@
   --fondo-pagina: #000;   /* franjas alrededor del lienzo */
   --fondo: #fff;
   --texto: #2b2b2e;
-  --texto-suave: #6e6e73;
+  --texto-suave: #606068;
   --acento: #3a3a3c;
-  --linea: #d2d2d7;
-  --gris-suave: #f2f2f4;
+  --linea: #dedee3;
+  --gris-suave: #f6f6f8;
 
-  --verde: #2e9e44;
-  --amarillo: #f2b705;
-  --rojo: #d62d20;
+  /* Paleta categórica Tableau 10. */
+  --tableau-rosa: #FF9DA7;
+  --tableau-marron: #9C755F;
+  --tableau-gris: #BAB0AC;
+  --verde: #59A14F;
+  --amarillo: #EDC948;
+  --rojo: #E15759;
 
   --t-portada: 128px;
-  --t-titulo: 72px;      /* 36 pt */
+  --t-titulo: 56px;      /* 28 pt */
   --t-subtitulo: 44px;
   --t-texto: 36px;
   --t-rotulo: 30px;
   --t-pequeno: 24px;
   --t-terminos: 22px;
-  --t-pruebelo: 28px;
+  --t-pruebelo: 26px;
   --t-fuente: 20px;      /* 10 pt */
   --t-cifra: 300px;
+  --t-quiebre: 132px;
+  --fondo-quiebre: #2b2b2e;
+  --texto-quiebre: #fff;
+  --sangria-quiebre: 820px;
+  --fondo-encabezado: #212121;
+  --texto-encabezado: #fff;
+  --t-encabezado: 48px;
+  --alto-encabezado: 108px;
+  --margen-contenido: 60px;
+  --margen-titulo: 40px;
 
+  --radio: 12px;
+  --radio-grande: 16px;
+  --borde: 1px solid var(--linea);
   --margen: 120px;
   --hueco: 64px;
-  --transicion: 0.45s ease;
+  --transicion: 0.2s ease;
 }
 
 /* Color de acento por bloque: <section data-bloque="..."> */
 [data-bloque="apertura"]   { --acento: #3a3a3c; }  /* apertura y cierre: gris oscuro */
-[data-bloque="linea"]      { --acento: #0a66c2; }  /* línea de tiempo: azul */
-[data-bloque="leer"]       { --acento: #0f9488; }  /* leer, decidir e instalar: turquesa */
-[data-bloque="analitica"]  { --acento: #2e8b3d; }  /* analítica y curso: verde */
-[data-bloque="gestion"]    { --acento: #e06c00; }  /* gestión académica: naranja */
-[data-bloque="ventaja"]    { --acento: #7b3fbf; }  /* ventaja competitiva: morado */
-[data-bloque="gobernanza"] { --acento: #c62828; }  /* gobernanza: rojo */
+[data-bloque="linea"]      { --acento: #4E79A7; }  /* línea de tiempo: azul */
+[data-bloque="leer"]       { --acento: #76B7B2; }  /* leer, decidir e instalar: turquesa */
+[data-bloque="analitica"]  { --acento: #59A14F; }  /* analítica y curso: verde */
+[data-bloque="gestion"]    { --acento: #F28E2B; }  /* gestión académica: naranja */
+[data-bloque="ventaja"]    { --acento: #B07AA1; }  /* ventaja competitiva: morado */
+[data-bloque="gobernanza"] { --acento: #E15759; }  /* gobernanza: rojo */
 
 /* Variante oscura por diapositiva: <section class="oscuro" ...> */
 .oscuro {

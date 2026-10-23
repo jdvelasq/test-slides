@@ -1,27 +1,42 @@
-// Motor de la presentación: carga slides/001.html, 002.html, ... hasta el primer
+// Motor de la presentación: carga slides/001.js, 002.js, ... hasta el primer
 // número que falte, escala el lienzo 1920×1080 a la ventana y gestiona la navegación.
+// Las slides se cargan con <script> (no con fetch) para que index.html funcione
+// también abierto con doble clic (file://).
 (() => {
   const W = 1920;
   const H = 1080;
   const BATCH = 10;
   const MARCAS = ['Antes de 2017', '2017', '2020', '2022', '2023', '2024', '2025', '2026'];
   const stage = document.getElementById('stage');
+  const recibidas = new Map();
   let slides = [];
   let current = 0;
 
   const pad = (n) => String(n).padStart(3, '0');
 
-  // 404 = no hay más slides; otros fallos (red, 5xx) se reintentan para no cortar el deck.
-  async function fetchSlide(n, intentos = 3) {
+  // Cada slides/NNN.js llama a diapositiva(`<section>…</section>`).
+  window.diapositiva = (html) => {
+    const n = Number(document.currentScript?.dataset.n);
+    if (n) recibidas.set(n, html);
+  };
+
+  function loadScript(n) {
+    return new Promise((resolve) => {
+      const s = document.createElement('script');
+      s.src = `slides/${pad(n)}.js?v=20261022-filas5`;
+      s.dataset.n = n;
+      s.onload = () => resolve(recibidas.get(n) ?? null);
+      s.onerror = () => { s.remove(); resolve(null); };
+      document.head.append(s);
+    });
+  }
+
+  // Un fallo puede ser el final del deck o un error de red: se reintenta una vez.
+  async function fetchSlide(n, intentos = 2) {
     for (let i = 0; i < intentos; i++) {
-      try {
-        const res = await fetch(`slides/${pad(n)}.html`, { cache: 'no-cache' });
-        if (res.ok) return await res.text();
-        if (res.status === 404) return null;
-      } catch {
-        // reintentar
-      }
-      await new Promise((r) => setTimeout(r, 300 * (i + 1)));
+      const html = await loadScript(n);
+      if (html !== null) return html;
+      if (i < intentos - 1) await new Promise((r) => setTimeout(r, 200));
     }
     return null;
   }
@@ -122,7 +137,7 @@
     const sources = await loadSlides();
     if (!sources.length) {
       stage.innerHTML = '<section class="activa" data-layout="seccion"><h2>No hay diapositivas</h2>' +
-        '<p>Crea slides/001.html y sirve el sitio por HTTP (no con file://).</p></section>';
+        '<p>Crea slides/001.js.</p></section>';
       return;
     }
     build(sources);

@@ -1,0 +1,41 @@
+diapositiva(`
+<section data-audiencia="comun" data-layout="afirmacion" data-bloque="linea" class="s038">
+  <style>
+    .s038 .mapa { display: grid; grid-template-columns: 1fr 520px 1fr; align-items: center; gap: 0; width: 100%; }
+    .s038 .lado { display: flex; flex-direction: column; gap: 56px; }
+    .s038 .q { position: relative; font-size: 34px; font-weight: 700; }
+    .s038 .izq .q { text-align: right; padding-right: 110px; }
+    .s038 .der .q { padding-left: 110px; }
+    .s038 .q::after { content: ""; position: absolute; top: 50%; width: 90px; height: 2px; background: var(--texto-suave); }
+    .s038 .izq .q::after { right: 10px; }
+    .s038 .der .q::after { left: 10px; }
+    .s038 .q b { color: var(--acento); margin-right: 8px; }
+    .s038 .anuncio { padding: 28px 32px; border-radius: 24px; background: #fff; box-shadow: 0 0 0 2px var(--linea), 0 20px 50px rgba(0, 0, 0, 0.12); }
+    .s038 .anuncio small { color: var(--texto-suave); font-size: 20px; }
+    .s038 .anuncio .gancho { margin: 14px 0 20px; font-size: 40px; font-weight: 800; line-height: 1.15; }
+    .s038 .anuncio .imagen { height: 140px; border-radius: 16px; background: linear-gradient(135deg, #ffd6e8, #d6e4ff, #d6fff1); display: flex; align-items: center; justify-content: center; font-size: 64px; color: #fff; }
+    .s038 .anuncio .boton { margin-top: 18px; padding: 12px; border-radius: 12px; background: #1d1d1f; color: #fff; text-align: center; font-size: 22px; font-weight: 700; }
+  </style>
+  <h2>Seis preguntas antes de creerle a un anuncio.</h2>
+  <div class="evidencia">
+    <div class="mapa">
+      <div class="lado izq">
+        <div class="q"><b>1</b>¿Qué capa es?</div>
+        <div class="q"><b>2</b>¿Qué modelo usa por debajo?</div>
+        <div class="q"><b>3</b>¿Dónde quedan los datos?</div>
+      </div>
+      <div class="anuncio">
+        <small>Patrocinado</small>
+        <div class="gancho">¡Tu agente con MCP que lo hace todo!</div>
+        <div class="imagen">✦ ✦ ✦</div>
+        <div class="boton">Pruébalo gratis</div>
+      </div>
+      <div class="lado der">
+        <div class="q"><b>4</b>¿Qué permisos pide?</div>
+        <div class="q"><b>5</b>¿Es producto, vista previa o demo?</div>
+        <div class="q"><b>6</b>¿Qué problema mío resuelve?</div>
+      </div>
+    </div>
+  </div>
+</section>
+`);

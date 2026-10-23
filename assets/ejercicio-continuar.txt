@@ -1,0 +1,27 @@
+CONTINUAR EL EJERCICIO EN OTRA SESIÓN
+Material ficticio. No es una norma real ni orienta decisiones institucionales.
+
+AL CERRAR LA PRIMERA SESIÓN
+Guarde tres archivos, manualmente si utiliza un chat sin acceso a archivos:
+1. regla-y-casos.txt: copia del material original, sin modificarlo.
+2. borradores.txt: tabla con las cinco acciones, artículos, fragmentos y faltantes.
+3. avance.txt: casos comprobados, errores corregidos y pendientes. Indique que B se remite al comité sin decidir la excepción y que E sigue pendiente de fecha.
+No incluya datos personales. Conserve la clave por separado para comprobar.
+
+AL ABRIR OTRA SESIÓN
+Adjunte esos tres archivos, o permita que el agente los lea en la carpeta de práctica.
+Encargo:
+“Lee el material y el avance antes de continuar. Resume qué está comprobado y qué sigue pendiente. No supongas acceso a la conversación anterior. No cambies los originales. Prepara una nueva versión de los borradores con estos dos casos:
+F. Presentación en el día 7 sin justificación.
+G. La consulta cita un artículo 4 que no está en el material. No incluye más datos.
+Para cada caso devuelve acción propuesta, artículo y fragmento si existen, y datos faltantes. Si una fuente falta, indícalo. No envíes ni apruebes respuestas.”
+
+COMPROBACIÓN INDEPENDIENTE
+F: solicitar completar la justificación según el artículo 2, antes de remitir al comité. No decidir la excepción.
+G: señalar que el artículo 4 no está disponible; pedir el texto de la fuente citada y los datos del caso. No inventar su contenido ni emitir una decisión con ese artículo.
+Los casos A–E deben conservar sus acciones correctas. E permanece pendiente de fecha.
+El material original debe conservarse intacto. Los archivos guardados deben permitir localizar la regla aplicada y los pendientes.
+
+VARIANTE DE FALLO DE ACCESO
+En una sesión nueva, entregue solo avance.txt y solicite continuar.
+Resultado esperado: el sistema debe pedir el material de la regla y los casos antes de producir citas o resolverlos. Un resumen de avances no acredita el texto exacto de la fuente.

@@ -1,0 +1,18 @@
+EJERCICIO FICTICIO: CONSULTAS ACADÉMICAS
+Material de práctica. No es una norma real ni orienta decisiones institucionales.
+Todos los nombres, plazos y casos son ficticios.
+
+REGLA DEL EJERCICIO
+Artículo 1. Una solicitud ordinaria se registra si se presenta dentro de los cinco días calendario siguientes a la publicación y contiene una justificación. La fecha de publicación es el día 0; son oportunos los días 1 a 5, incluidos.
+Artículo 2. Si falta la justificación o la fecha de presentación, se solicita completar esa información antes de clasificar o remitir la solicitud. Este paso tiene prioridad sobre los artículos 1 y 3.
+Artículo 3. Una solicitud completa presentada después del día 5 se remite al comité para estudiar la excepción. El asistente no aprueba ni rechaza excepciones.
+
+CASOS
+A. Presentación en el día 3. Justificación adjunta.
+B. Presentación en el día 7. Justificación adjunta.
+C. Presentación en el día 2. No incluye justificación.
+D. Presentación en el día 5. Justificación adjunta.
+E. Justificación adjunta. No se indica fecha de presentación.
+
+ENCARGO
+Usa solo la regla adjunta. Para cada caso: acción propuesta, artículo y fragmento de respaldo, y datos faltantes. No inventes fechas ni decidas excepciones.

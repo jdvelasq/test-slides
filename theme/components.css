@@ -7,7 +7,7 @@
   bottom: 32px;
   font-size: 18px;
   color: var(--texto-suave);
-  opacity: 0.6;
+  opacity: 0.8;
   font-variant-numeric: tabular-nums;
 }
 
@@ -27,7 +27,7 @@
   right: var(--margen);
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid var(--linea);
+  border-top: var(--borde);
   font-size: var(--t-fuente);
   color: var(--texto-suave);
 }
@@ -50,14 +50,13 @@
 /* Recuadro de términos: <dl class="terminos"><div><dt>…</dt> <dd>…</dd></div></dl> */
 .terminos {
   margin: 0;
-  padding: 18px 26px;
-  border-radius: 16px;
-  background: var(--gris-suave);
+  padding: 0;
+  color: var(--texto-suave);
   font-size: var(--t-terminos);
   line-height: 1.35;
   max-width: 900px;
 }
-.terminos dt { display: inline; font-weight: 700; }
+.terminos dt { display: inline; font-weight: 600; color: var(--texto); }
 .terminos dt::after { content: ":"; }
 .terminos dd { display: inline; margin: 0; }
 .terminos div + div { margin-top: 6px; }
@@ -66,9 +65,8 @@
 .pruebelo {
   margin-left: auto;
   max-width: 920px;
-  padding: 18px 28px 20px;
-  border: 3px solid var(--acento);
-  border-radius: 20px;
+  padding: 0 0 0 24px;
+  border-left: 2px solid var(--acento);
   font-size: var(--t-pruebelo);
   line-height: 1.35;
 }
@@ -77,7 +75,7 @@
   display: block;
   margin-bottom: 6px;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--acento);
@@ -118,7 +116,7 @@
   font-weight: 600;
   line-height: 1.3;
   padding-left: 24px;
-  border-left: 6px solid var(--acento);
+  border-left: 2px solid var(--acento);
 }
 
 /* ---------- Bloques de diagrama ---------- */
@@ -134,8 +132,8 @@
 
 .caja {
   padding: 20px 28px;
-  border: 2px solid var(--linea);
-  border-radius: 16px;
+  border: var(--borde);
+  border-radius: var(--radio);
   background: var(--fondo);
   line-height: 1.3;
 }
@@ -144,15 +142,15 @@
 
 .tarjeta {
   padding: 32px;
-  border-radius: 24px;
+  border-radius: var(--radio);
   background: var(--gris-suave);
   line-height: 1.3;
 }
-.tarjeta.acento { background: var(--acento-suave); box-shadow: inset 0 0 0 3px var(--acento); color: var(--texto); }
+.tarjeta.acento { background: var(--acento-suave); box-shadow: inset 0 0 0 1px var(--acento); color: var(--texto); }
 
 .panel-titulo {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--texto-suave);
@@ -192,15 +190,15 @@
 .punto.amarillo { background: var(--amarillo); }
 .punto.rojo { background: var(--rojo); }
 
-mark { background: #ffe680; color: inherit; padding: 0 6px; border-radius: 6px; font-weight: 700; }
+mark { background: var(--acento-suave); color: inherit; padding: 0 6px; border-radius: 6px; font-weight: 700; }
 
 /* ---------- Maquetas de interfaz ---------- */
 
 /* Ventana genérica con barra de título: chat, navegador, terminal, documento */
 .ventana {
-  border-radius: 20px;
+  border-radius: var(--radio-grande);
   background: var(--fondo);
-  box-shadow: 0 0 0 2px var(--linea), 0 24px 60px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 0 1px var(--linea);
   overflow: hidden;
   font-size: 26px;
   line-height: 1.4;
@@ -271,7 +269,7 @@ mark { background: #ffe680; color: inherit; padding: 0 6px; border-radius: 6px; 
   border-radius: 8px;
   background: #fff;
   color: #2b2b2e;
-  box-shadow: 0 0 0 2px var(--linea), 0 18px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 1px var(--linea);
   font-size: 24px;
   line-height: 1.45;
 }
@@ -282,7 +280,7 @@ mark { background: #ffe680; color: inherit; padding: 0 6px; border-radius: 6px; 
 
 /* Tablas */
 section table { border-collapse: collapse; font-size: 28px; }
-section th, section td { padding: 14px 24px; border-bottom: 2px solid var(--linea); text-align: left; vertical-align: top; }
+section th, section td { padding: 14px 24px; border-bottom: var(--borde); text-align: left; vertical-align: top; }
 section th { font-weight: 700; color: var(--texto-suave); }
 section table .col-acento { background: var(--acento-suave); color: var(--acento); font-weight: 700; }
 
@@ -290,7 +288,7 @@ section code { font-family: var(--fuente-mono); font-size: 0.9em; }
 section pre {
   margin: 0;
   padding: 40px;
-  border-radius: 24px;
+  border-radius: var(--radio);
   background: var(--gris-suave);
   font-size: 30px;
   line-height: 1.5;
@@ -302,3 +300,42 @@ section pre {
 
 /* SVG de diagramas: hereda la tipografía */
 svg.diagrama { font-family: var(--fuente); overflow: visible; }
+
+/* Composiciones editoriales: comparación alineada y pilares sin recuadros. */
+.comparacion { display: grid; grid-template-columns: 1fr 1.5fr; align-items: stretch; gap: var(--hueco); width: 100%; }
+.comparacion > .tarjeta { min-width: 0; padding: 28px 0; background: none; border-radius: 0; border-top: var(--borde); box-shadow: none; }
+.comparacion > .tarjeta.acento { border-top: 2px solid var(--acento); }
+.pilares > .tarjeta { min-width: 0; background: none; border-radius: 0; border-top: var(--borde); }
+.pilares > .tarjeta + .tarjeta { border-left: var(--borde); }
+.nota-lateral { padding-left: 28px; border-left: var(--borde); color: var(--texto-suave); }
+.nota-lateral b { color: var(--texto); }
+
+/* Una tarea completa: entrada, encargo y criterio de aceptación. */
+.recorrido { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; width: 100%; }
+.paso-practico { padding-top: 28px; border-top: var(--borde); }
+.paso-practico h3 { margin-top: 22px; font-size: var(--t-texto); line-height: 1.25; }
+.paso-practico p { margin-top: 20px; font-size: var(--t-rotulo); line-height: 1.45; color: var(--texto-suave); }
+.criterio-aceptacion { font-size: var(--t-pequeno); line-height: 1.4; color: var(--texto-suave); }
+
+/* Patrón didáctico de referencia: pregunta, afirmación y evidencia. */
+.cabecera-concepto { flex-shrink: 0; }
+.pregunta-guia { margin-bottom: 14px; font-size: var(--t-pequeno); line-height: 1.35; color: var(--texto-suave); }
+.terminos .idea-clave dt { color: var(--acento); }
+.terminos .idea-clave dd { color: var(--texto); }
+
+/* Mecanismos: las flechas indican el recorrido real de la información. */
+.ruta-mecanismo { display: grid; grid-template-columns: repeat(var(--pasos, 4), minmax(0, 1fr)); gap: 36px; width: 100%; align-items: stretch; }
+.nodo-mecanismo { position: relative; display: flex; flex-direction: column; justify-content: center; gap: 14px; padding: 24px; border: var(--borde); border-radius: var(--radio); font-size: var(--t-pequeno); line-height: 1.35; min-width: 0; }
+.nodo-mecanismo strong { font-weight: 600; }
+.nodo-mecanismo span { color: var(--texto-suave); }
+.nodo-mecanismo.foco { border-color: var(--acento); background: var(--acento-suave); }
+.nodo-mecanismo.foco strong { color: var(--acento); }
+.nodo-mecanismo:not(:last-child)::after { content: "→"; position: absolute; right: -30px; top: 50%; transform: translateY(-50%); color: var(--texto-suave); font-size: var(--t-rotulo); }
+.mecanismo-etapa { width: 100%; font-size: var(--t-pequeno); color: var(--texto-suave); }
+
+/* Diagramas draw.io exportados: el SVG local conserva la presentación sin conexión. */
+.diagrama-editable { width: 100%; height: 100%; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.diagrama-editable img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+
+/* Orientación persistente dentro de cada bloque de aplicación. */
+section[data-audiencia] > .rotulo-audiencia { position: absolute; z-index: 1; top: 36px; left: var(--margen); font-size: var(--t-fuente); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--texto-suave); }
