@@ -1,5 +1,5 @@
 diapositiva(`
-<section data-audiencia="comun" data-layout="portada" data-bloque="apertura" class="s001">
+<section data-layout="portada" data-bloque="apertura" class="s001">
   <style>
     .s001 h1 { max-width: 1300px; }
     .s001 .subtitulo { max-width: 1080px; line-height: 1.4; }
