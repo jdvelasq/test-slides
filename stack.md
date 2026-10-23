@@ -25,13 +25,18 @@ ollama pull qwen3-coder:30b   # unos 19 GB
 
 ## Paso 3. Crea una variante del modelo con 32k de contexto
 
-Ollama usa por defecto un contexto corto. Con menos de 32k, el agente pierde las reglas de `AGENTS.md`. Crea una variante que siempre cargue con 32k:
+Ollama usa por defecto un contexto corto. Con menos de 32k, el agente pierde las reglas de `AGENTS.md`. Crea una variante que siempre cargue con 32k.
 
-```sh
-cat > ~/qwen3-coder-32k.Modelfile <<'EOF'
+Crea el archivo `qwen3-coder-32k.Modelfile` en tu carpeta personal (`~`), no en el repo: Ollama solo lo lee al crear el modelo y no debe publicarse en GitHub Pages.
+
+```text
 FROM qwen3-coder:30b
 PARAMETER num_ctx 32768
-EOF
+```
+
+Crea el modelo y comprueba que aparece:
+
+```sh
 ollama create qwen3-coder-32k -f ~/qwen3-coder-32k.Modelfile
 ollama list   # debe aparecer qwen3-coder-32k
 ```
