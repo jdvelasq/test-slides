@@ -11,7 +11,7 @@ Todos los comandos se ejecutan desde la raíz del repo.
 
 ## Paso 1. Instala Ollama
 
-Descarga Ollama para macOS desde [ollama.com/download](https://ollama.com/download), arrástralo a Aplicaciones y ábrelo. La primera vez que se abre, Ollama pide permiso para instalar el comando `ollama` en la terminal: acéptalo. Desde entonces queda en la barra de menús y arranca solo al iniciar sesión. Comprueba en una terminal nueva:
+Descarga Ollama desde [ollama.com/download](https://ollama.com/download) e instálalo. En la terminal, prueba:
 
 ```sh
 ollama --version
