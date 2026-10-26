@@ -22,7 +22,7 @@
    El motor escribe las marcas; data-resaltar lista las que van en el color de acento. */
 .linea-tiempo {
   position: absolute;
-  top: 48px;
+  top: 100px;
   left: var(--margen);
   right: var(--margen);
   display: flex;

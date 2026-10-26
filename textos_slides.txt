@@ -1,0 +1,4995 @@
+# SLIDE
+
+2017–2026 · IA generativa y agéntica: del chat a delegar trabajo
+
+Un recorrido histórico, de 2017 a octubre de 2026, para entender qué se puede hacer hoy y cómo hacerlo bien.
+
+generar
+
+usar herramientas
+
+delegar
+
+# SLIDE
+
+2026 · Objetivos: qué deberías poder hacer al terminar
+
+Entender el vocabulario que aparece en noticias, publicidad y redes: modelo local, open-weight, Qwen, MCP, conector, skill, agente, deep research, vibe coding.
+
+Saber qué herramienta usar para cada tarea: chat, búsqueda, investigación profunda, cuaderno de fuentes, agente de trabajo.
+
+Delegar trabajo real a Claude Cowork o ChatGPT Work: investigar en la web, preparar informes, analizar hojas de cálculo, armar presentaciones.
+
+Revisar lo que el agente entrega antes de usarlo.
+
+Objetivo: dominar las herramientas y técnicas para trabajar con IA generativa.
+
+# SLIDE
+
+2017–2026 · El recorrido: seis etapas
+
+Antes de 2017
+
+2017
+
+2020
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+2017–2022 de dónde sale todo. El modelo aprende a conversar.
+
+2023 el chat se vuelve herramienta. Aparecen la competencia, la visión y los modelos que se descargan.
+
+2024 el modelo lee mucho, recuerda, busca y empieza a usar herramientas.
+
+2025 los agentes investigan y navegan por nosotros.
+
+2026 delegar trabajo de oficina completo.
+
+Cierre cómo delegar bien y cómo revisar.
+
+Pruébelo
+
+Mapa del recorrido: seis etapas en orden cronológico
+
+# SLIDE
+
+2026 · Vocabulario base: generativa, agéntica, asistente, agente
+
+Responde
+
+Chat
+
+Actúa
+
+¿Qué es la IA generativa?
+
+Buscar
+
+Hacer
+
+Entregar
+
+Planear
+
+Recopilar información
+
+Ejecutar acciones
+
+Resultados finales
+
+Es una inteligencia artificial que produce contenido nuevo...
+
+Definir objetivo
+
+la historia de estos años es el paso de "me responde" a "lo hace por mí"
+
+IA generativa produce contenido nuevo (texto, imágenes, audio) a partir de una instrucción. Responde y se detiene.
+
+IA agéntica además de generar, decide pasos, usa herramientas y actúa (busca, abre archivos, llena formularios) hasta cumplir un objetivo.
+
+Asistente tú haces el trabajo y la IA te ayuda en cada paso.
+
+Agente le entregas un objetivo y la IA hace los pasos; tú revisas el resultado.
+
+# SLIDE
+
+Antes de 2017
+
+2017
+
+2020
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+2017–2022 · De dónde sale todo
+
+2017–2022
+
+Del artículo científico al chat que usa todo el mundo.
+
+# SLIDE
+
+2017 · Transformer: la "T" de GPT
+
+no hace falta entender la matemática; basta saber que casi todo lo que vemos hoy nace de esta arquitectura.
+
+hola
+
+mundo
+
+bonito
+
+día
+
+Generative
+
+Pre-trained
+
+Trained
+
+Transformer arquitectura que permite procesar secuencias completas al mismo tiempo, en lugar de palabra por palabra.
+
+# SLIDE
+
+2017 · Token: el modelo no lee palabras, lee fragmentos
+
+Un token es un fragmento de texto: a veces una palabra completa, a veces un trozo de palabra o un signo.
+
+Como referencia aproximada, una página de texto equivale a unos cientos de tokens.
+
+Todo se mide en tokens: cuánto texto cabe en una conversación, cuánto cuesta una respuesta y cuánto consume tu límite de uso.
+
+Cuando una herramienta dice "contexto de 1 millón de tokens", habla de cuánto puede leer de una sola vez.
+
+token
+
+token
+
+token
+
+token
+
+token
+
+token
+
+token
+
+token
+
+token
+
+Pruébelo
+
+Token: fragmento de texto que el modelo procesa.
+
+# SLIDE
+
+2021 · Modelos fundacionales: un modelo, muchas tareas
+
+resumir
+
+traducir
+
+modelo fundacional
+
+→
+
+clasificar
+
+responder
+
+Parámetros los "números" internos que el modelo aprende. Cuando ves "7B" o "70B", son miles de millones de parámetros.
+
+Entrenamiento cuando el modelo aprende. Lo hace el proveedor, una sola vez y a un costo enorme.
+
+Inferencia cuando el modelo responde. Es lo que ocurre cada vez que tú lo usas.
+
+# SLIDE
+
+2022 · InstructGPT y RLHF: de completar texto a seguir instrucciones
+
+Antes
+
+Después
+
+Se escribe "La capital de Francia" y el modelo continúa con más texto.
+
+Se escribe "¿Cuál es la capital de Francia?" y el modelo responde "París".
+
+Limitación importante: aprendió a dar respuestas que a una persona le parecen buenas, no a verificar que sean verdaderas. De ahí vienen las alucinaciones.
+
+InstructGPT modelo ajustado con ejemplos escritos por personas y con personas que comparan y califican respuestas.
+
+Pruébelo
+
+Herramienta: “Ajustar modelos con RLHF para seguir instrucciones”
+
+RLHF Aprendizaje por refuerzo con retroalimentación humana.
+
+# SLIDE
+
+2022 · DALL-E 2 y Stable Diffusion: la IA genera imágenes
+
+DALL-E 2: nube
+
+Ruido puro
+
+Ruido + forma
+
+Ruido + detalles
+
+Imagen nítida
+
+Stable Diffusion: descargable
+
+Modelo de difusión técnica que parte de ruido y lo va limpiando hasta formar la imagen que describe el texto.
+
+Pruébelo
+
+Pregunta: ¿lo uso en la nube o lo corro en mi máquina?
+
+Prompt: “un gato sentado en una nube”
+
+# SLIDE
+
+2022 · ChatGPT: la IA conversacional llega a todos
+
+Es el punto de partida práctico de todo lo que sigue. Cada hito posterior resuelve una limitación de este primer chat.
+
+ChatGPT
+
+¿Qué es una IA generativa?
+
+Una IA generativa es un modelo de lenguaje que puede crear texto, imágenes o código a partir de instrucciones o prompts.
+
+No buscaba en internet
+
+No veía imágenes
+
+No usaba herramientas
+
+No recordaba entre conversaciones
+
+¿Puedes explicarme cómo funciona?
+
+Funciona mediante el aprendizaje en grandes volúmenes de datos textuales. Aprende patrones y relaciones entre palabras para generar nuevas combinaciones coherentes.
+
+# SLIDE
+
+2022 · Lo que un chat hace bien: explicar, resumir, reescribir, traducir
+
+Antes de 2017
+
+2017
+
+2020
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+Explicar:
+
+Resumir:
+
+"Explica qué es una regresión lineal en dos frases y da un ejemplo sencillo".
+
+"Resume este texto en cinco viñetas".
+
+Riesgo bajo
+
+Riesgo alto
+
+transformar tu texto
+
+pedir datos de memoria
+
+Reescribir:
+
+Traducir:
+
+"Reescribe este párrafo en tono académico".
+
+"Traduce al inglés manteniendo los términos técnicos".
+
+si la tarea es transformar un texto que tú le das, el riesgo de error es bajo. Si le pides datos que no le diste, el riesgo sube.
+
+# SLIDE
+
+2022 · Alucinación y fecha de corte: por qué se equivoca con seguridad
+
+Genera, no consulta
+
+Chat
+
+El modelo genera el texto más plausible, no consulta una base de datos.
+
+¿Cuál es la referencia de la teoría de la relatividad?
+
+Inventa con seguridad
+
+Septiembre 2021
+
+Einstein, A. (1905). "Zur Elektrodynamik bewegter Körper". Annalen der Physik, 322(10), 891–921.
+
+Si no sabe algo, puede inventarlo con el mismo tono seguro: nombres, cifras, citas, referencias bibliográficas.
+
+L
+
+M
+
+M
+
+J
+
+V
+
+S
+
+D
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+Fecha de corte
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+No existe
+
+22
+
+23
+
+24
+
+25
+
+26
+
+27
+
+28
+
+Además, su conocimiento termina en una fecha de corte: no sabe lo que pasó después de su entrenamiento, a menos que busque en la web.
+
+29
+
+30
+
+Fecha de corte
+
+Hitos siguientes
+
+Buena parte de los hitos que siguen (búsqueda, documentos propios, investigación profunda) existen para atacar este problema.
+
+# SLIDE
+
+2023 · El chat se vuelve herramienta
+
+Competencia, visión, extensiones y modelos que se descargan.
+
+Antes de 2017
+
+2017
+
+2020
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+# SLIDE
+
+2023 · GPT-4 y Claude: deja de haber un solo proveedor
+
+«ChatGPT» y «Claude» son productos; GPT y Claude, a secas, son las familias de modelos que hay detrás.
+
+14 de marzo de 2023: OpenAI presenta GPT-4, con mejor razonamiento, mejor seguimiento de instrucciones largas y capacidad de recibir imágenes.
+
+14 de marzo de 2023: Anthropic abre Claude al público vía API. Su enfoque distintivo es la «IA constitucional»: el modelo revisa sus respuestas contra un conjunto explícito de principios.
+
+Desde aquí, cada familia de modelos tiene un dueño: GPT (OpenAI), Claude (Anthropic), Gemini (Google), Llama (Meta), Qwen (Alibaba), DeepSeek, Kimi (Moonshot), Grok (xAI).
+
+GPT
+
+Claude
+
+Gemini
+
+Llama
+
+OpenAI
+
+Anthropic
+
+Google
+
+Meta
+
+Qwen
+
+DeepSeek
+
+Kimi
+
+Grok
+
+Alibaba
+
+DeepSeek
+
+Moonshot
+
+xAI
+
+# SLIDE
+
+2023 · GPT-4V: el modelo ve imágenes
+
+Ver la pantalla es lo que más tarde permite que un agente use una computadora.
+
+Foto de pizarra
+
+Entrada
+
+Proceso
+
+Sal.
+
+ChatGPT
+
+El diagrama muestra un flujo de tres etapas: entrada, procesamiento y salida. Cada etapa se conecta con la siguiente mediante una flecha.
+
+Flujo de tres etapas
+
+Pizarra
+
+Gráfico
+
+PDF escaneado
+
+Tabla en imagen
+
+Formulario
+
+imagen → texto
+
+↔
+
+texto → imagen
+
+entender
+
+generar
+
+# SLIDE
+
+2023 · Plugins y GPTs: el chat con extensiones
+
+Instrucciones
+
+Conocimiento
+
+Herramientas
+
+=
+
+Asistente
+
+Plugin (2023)
+
+→
+
+Conector (2024 en adelante)
+
+Marzo 2023
+
+Noviembre 2023
+
+Plugins de ChatGPT: el chat se conecta con servicios externos sin reentrenar el modelo.
+
+GPTs personalizados: cualquier persona arma un asistente sin programar.
+
+Fórmula de un GPT
+
+Antecedente directo
+
+Instrucciones + conocimiento + herramientas = asistente reutilizable.
+
+Es el origen de los proyectos, las skills y los conectores de hoy.
+
+# SLIDE
+
+2023 · Copilot en Windows: la IA entra al sistema operativo
+
+La pregunta que deja abierta: qué parte corre en tu equipo, qué parte va a la nube y qué permisos le das.
+
+Copilot en Windows 11
+
+Apple Intelligence
+
+Gemini en Android
+
+Gemini en Chrome
+
+21 sep 2023
+
+jun 2024
+
+mar 2025
+
+2026
+
+# SLIDE
+
+2023 · LLaMA: modelo abierto y modelo cerrado
+
+Cuando en redes dicen "un modelo chino gratis que compite con GPT", casi siempre hablan de un modelo open-weight.
+
+24 de febrero de 2023: Meta publica LLaMA para investigación. Días después, los pesos se filtran y la comunidad empieza a ejecutarlo en computadoras comunes.
+
+Cerrado
+
+Open-weight
+
+usas el servicio
+
+descargas el modelo
+
+GPT
+
+Claude
+
+Gemini
+
+Llama
+
+Mistral
+
+Qwen
+
+DeepSeek
+
+Gemma
+
+gpt-oss
+
+"Open-weight" no siempre es "open source": la licencia puede tener restricciones de uso.
+
+Modelo cerrado solo se usa a través del servicio del proveedor.
+
+Modelo open-weight el archivo del modelo se descarga y puede correr en tu máquina.
+
+# SLIDE
+
+2023 · llama.cpp y cuantización: un modelo gigante en una laptop
+
+16 bits
+
+8 bits
+
+modelo.gguf
+
+4 bits
+
+Cuanto más pequeño el modelo y más cuantizado, más rápido y liviano, pero menos capaz.
+
+modelo-Q8.gguf
+
+modelo-Q4.gguf
+
+Memoria
+
+Memoria
+
+Memoria
+
+Calidad
+
+Calidad
+
+Calidad
+
+GGUF formato estándar para modelos locales.
+
+Q4, Q8 nivel de cuantización.
+
+# SLIDE
+
+2023 · Hugging Face: cómo leer el nombre de un modelo
+
+¿Qué es Hugging Face?
+
+Leer el nombre
+
+"Qwen/Qwen3.8-27B": organización (Qwen), familia y versión (Qwen3.8) y tamaño (27 mil millones de parámetros).
+
+El sitio donde se publican y descargan la mayoría de los modelos abiertos.
+
+Qwen/Qwen3.8-27B
+
+Variantes en los nombres
+
+Uso local
+
+Organización
+
+Familia y versión
+
+Tamaño
+
+No hace falta entrar a Hugging Face para usar un modelo local: las aplicaciones de escritorio lo descargan por ti.
+
+Qwen
+
+Qwen3.8
+
+27 mil millones de parámetros
+
+"Instruct" o "Chat": ajustado para conversar.
+
+"GGUF": listo para correr localmente.
+
+"FP8": una versión de menor precisión.
+
+# SLIDE
+
+2023 · LM Studio y Ollama: un modelo en tu computadora, sin internet
+
+Mayo de 2023: LM Studio
+
+Julio de 2023: Ollama
+
+LM Studio
+
+✕
+
+La misma idea, pensada para usarse desde la terminal o desde otras aplicaciones.
+
+llama-3-8b
+
+Una aplicación de escritorio con tres pestañas: buscar y descargar un modelo, gestionarlo y chatear con él.
+
+mistral-7b
+
+phi-2
+
+gemma-2b
+
+Qué se gana
+
+Qué se pierde
+
+Los datos no salen de tu equipo, funciona sin conexión y no hay costo por uso.
+
+Los modelos que caben en una laptop son menos capaces que los grandes de la nube, y la velocidad depende de tu equipo.
+
+¿Qué es un modelo local?
+
+Demostración en vivo
+
+Desconectar el wifi y conversar con un modelo pequeño.
+
+Un modelo que corre en tu equipo, sin conexión a internet.
+
+# SLIDE
+
+2023 · Nube o local: depende de la tarea
+
+La nube para trabajo general; lo local para datos sensibles, sin conexión o para experimentar.
+
+Nube
+
+Local
+
+Calidad
+
+La mejor disponible
+
+Menor, limitada por tu equipo
+
+Privacidad
+
+Tus datos van al proveedor
+
+Se quedan en tu máquina
+
+Costo
+
+Suscripción o pago por uso
+
+Gratis una vez que tienes el equipo
+
+Internet
+
+Necesario
+
+No
+
+Herramientas agénticas (buscar, actuar, conectores)
+
+Vienen listas
+
+Requieren configuración
+
+# SLIDE
+
+2024 · El modelo lee mucho, recuerda, busca y usa herramientas
+
+De un chat aislado a un chat conectado.
+
+Antes de 2017
+
+2017
+
+2020
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+# SLIDE
+
+2024 · Gemini 1.5: la ventana de contexto de un millón de tokens
+
+Febrero 2024
+
+¿Qué es la ventana?
+
+Gemini 1.5 de Google llega a 1 millón de tokens de contexto, y más tarde a 2 millones en lista de espera.
+
+Todo lo que el modelo tiene "a la vista" en una conversación: tus mensajes, los archivos que subiste y sus propias respuestas.
+
+¿Para qué sirve?
+
+Limitación
+
+Con ventanas grandes se puede subir un libro, un informe extenso o horas de transcripción, y preguntar sobre todo eso a la vez.
+
+Más contexto significa más lentitud y más consumo, y el modelo puede pasar por alto detalles en medio de mucho texto.
+
+2022
+
+2024
+
+unas páginas
+
+un libro entero
+
+1 000 000 tokens
+
+ventana de contexto
+
+# SLIDE
+
+2024 · ChatGPT Memory: lo que el modelo recuerda de ti
+
+Buena práctica: revisar qué recuerda la herramienta, borrar lo que no corresponda y desactivarla para temas sensibles.
+
+13 de febrero de 2024: ChatGPT anuncia una memoria que guarda datos y preferencias entre conversaciones. Claude y Gemini incorporan algo equivalente después.
+
+Tres cosas que se confunden:
+
+Contexto
+
+Memoria
+
+Proyecto
+
+Lo que está en la conversación actual.
+
+Lo que sobrevive de una conversación a otra.
+
+Un espacio con instrucciones y archivos fijos que reutilizas para un mismo trabajo.
+
+Configuración
+
+Memoria
+
+Ver y borrar recuerdos
+
+# SLIDE
+
+2024 · RAG: responder a partir de tus documentos
+
+Origen del nombre
+
+La idea
+
+El nombre viene de un artículo de 2020: Retrieval-Augmented Generation, generación aumentada con recuperación.
+
+Antes de responder, el sistema busca los fragmentos relevantes en tus documentos y responde apoyándose en ellos.
+
+En la práctica
+
+Ventaja
+
+Es lo que ocurre cuando subes una carpeta de PDF y preguntas sobre ella, o cuando una herramienta dice "chatea con tus documentos".
+
+Respuestas ancladas a tus fuentes, con referencia al fragmento usado.
+
+Limitación
+
+Si la búsqueda no encuentra el fragmento correcto, la respuesta será incompleta aunque suene segura.
+
+→
+
+→
+
+→
+
+Pregunta
+
+Buscar en tus documentos
+
+Fragmentos relevantes
+
+Respuesta con referencia
+
+# SLIDE
+
+Buscador clásico
+
+Buscador con IA
+
+Escribes palabras clave, recibes enlaces, abres y lees, y la síntesis la haces tú.
+
+Perplexity y, después, la búsqueda dentro de ChatGPT, Claude y Gemini: escribes una pregunta, el sistema busca, lee y te responde con citas.
+
+2024 · Buscadores con IA: de la lista de enlaces a la respuesta con citas
+
+Proyectos abiertos
+
+Hábito necesario
+
+Perplexica (abril de 2024) muestra el mecanismo: un motor de búsqueda más un modelo que redacta citando la fuente de cada afirmación.
+
+Abrir al menos las citas clave. Que una respuesta tenga citas no significa que cada cita respalde lo que dice.
+
+Buscador clásico
+
+Buscador con IA
+
+Enlace 1
+
+La respuesta del sistema resume el tema y cita las fuentes entre corchetes: afirmación importante [1], dato relevante [2] y conclusión [3].
+
+Enlace 2
+
+Enlace 3
+
+Fuentes
+
+Enlace 4
+
+[1] Fuente A · [2] Fuente B · [3] Fuente C
+
+Enlace 5
+
+Enlace 6
+
+Enlace 7
+
+Enlace 8
+
+Enlace 9
+
+Enlace 10
+
+# SLIDE
+
+2024 · GPT-4o: hablar con el modelo en tiempo real
+
+→
+
+→
+
+Voz a texto
+
+Modelo
+
+Texto a voz
+
+→
+
+Modelo
+
+→
+
+13 de mayo de 2024
+
+Antes
+
+OpenAI presenta GPT-4o, un solo modelo que entiende y produce texto, imagen y audio.
+
+La voz encadenaba tres sistemas: voz a texto, modelo y texto a voz. Era lento y perdía el tono.
+
+Ahora
+
+Usos
+
+Se conversa casi como con una persona, se le puede interrumpir y entiende la entonación.
+
+Practicar una presentación, pensar en voz alta mientras caminas, dictar un borrador, conversar sobre lo que muestra la cámara del teléfono.
+
+# SLIDE
+
+2024 · Claude Artifacts: del texto al objeto
+
+Panel lateral
+
+Antes
+
+Claude Artifacts
+
+Junio de 2024: Claude muestra en un panel lateral lo que genera (un documento, un diagrama, una pequeña aplicación interactiva) y lo puedes probar ahí mismo.
+
+Antes había que copiar lo generado y pegarlo en otro programa para verlo.
+
+haz un cuestionario de cinco preguntas sobre...
+
+Pregunta 1 de 5
+
+Opción A
+
+Opción B
+
+Aquí tienes el cuestionario interactivo. Puedes responder y ver el resultado al final.
+
+Opción C
+
+Ejemplos
+
+Compartir
+
+Siguiente
+
+Ejemplos para quien no programa: una calculadora de notas, un cuestionario interactivo, una línea de tiempo, un tablero con tus datos.
+
+Se comparte con un enlace.
+
+Limitación
+
+Limitación: es un prototipo; no reemplaza un sistema institucional.
+
+# SLIDE
+
+2024 · o1: modelos de razonamiento
+
+Pregunta
+
+→
+
+Respuesta
+
+respuesta rápida
+
+→
+
+↺
+
+→
+
+Pregunta
+
+Respuesta
+
+razonamiento
+
+Pensar
+
+Úsalo para
+
+No hace falta para
+
+Problemas de varios pasos
+
+Preguntas simples
+
+Análisis
+
+Reescribir
+
+Planificación
+
+Traducir
+
+Revisión de un documento largo
+
+12 de septiembre de 2024
+
+Antes de responder
+
+OpenAI lanza o1, el primer modelo presentado explícitamente como "de razonamiento". Luego llegan los de Google, Anthropic y DeepSeek.
+
+El modelo dedica tiempo a "pensar": planea, prueba caminos y revisa su propio trabajo.
+
+En las aplicaciones
+
+Cuándo no activarlo
+
+Aparece como "pensar", "razonamiento extendido" o un selector de esfuerzo.
+
+Preguntas simples, reescribir o traducir. Ahí solo tarda más y consume más.
+
+# SLIDE
+
+2024 · Computer use: la IA mueve el mouse
+
+22 oct 2024
+
+Antes
+
+Anthropic presenta "computer use". El modelo mira capturas de pantalla y controla el mouse y el teclado como una persona.
+
+Un sistema de IA solo podía actuar en programas diseñados para conectarse con ella.
+
+Mirar la pantalla
+
+Volver a mirar
+
+Ciclo
+
+Decidir
+
+Ahora
+
+Riesgos
+
+Puede usar cualquier programa o sitio web pensado para personas.
+
+Hacer clic donde no corresponde, ejecutar acciones irreversibles (enviar, pagar, borrar) y exponer contraseñas.
+
+Hacer clic o escribir
+
+¿Permitir que la IA use esta aplicación?
+
+Controles
+
+Estas herramientas piden permiso por aplicación y confirmación antes de las acciones sensibles.
+
+Permitir
+
+Denegar
+
+# SLIDE
+
+2024 · MCP: el "USB-C" de la IA
+
+Antes: cada aplicación con cada servicio
+
+Claude
+
+Drive
+
+→
+
+ChatGPT
+
+Gmail
+
+MCP
+
+Gemini
+
+Notion
+
+→
+
+Cursor
+
+Base de datos
+
+25 de noviembre de 2024
+
+El problema
+
+Anthropic publica el Model Context Protocol (MCP) como estándar abierto.
+
+Cada aplicación de IA necesitaba una integración distinta con cada servicio (Drive, Gmail, Notion, una base de datos...).
+
+La solución
+
+Lo que tú ves
+
+Un enlace común. Un servicio se conecta una vez por MCP y funciona con cualquier aplicación compatible: Claude, ChatGPT, Gemini, Cursor y otras.
+
+No dice "MCP": en las aplicaciones aparece como "conectores" o "integraciones". Cuando en redes dicen "conecté Claude a mi Notion" o "MCP para Excel", hablan de esto.
+
+# SLIDE
+
+2024 · Herramienta, conector, agente: qué es cada cosa
+
+agente = modelo + herramientas + ciclo + un objetivo
+
+decidir
+
+Ciclo
+
+repetir
+
+usar
+
+decidir · usar herramienta · observar · repetir
+
+observar
+
+Herramienta
+
+Conector (MCP)
+
+Agente
+
+Una acción concreta que el modelo puede ejecutar (buscar en la web, leer un archivo, crear un evento).
+
+La forma estándar de darle al modelo las herramientas de un servicio.
+
+El modelo trabajando en ciclo. Decide qué herramienta usar, mira el resultado, decide el siguiente paso y sigue hasta cumplir el objetivo.
+
+# SLIDE
+
+Antes de 2017
+
+2017
+
+2020
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+2025 · Los agentes investigan y navegan por nosotros
+
+De responder preguntas a cumplir encargos.
+
+# SLIDE
+
+2025 · DeepSeek-R1: el momento de los modelos abiertos chinos
+
+Destilado 1
+
+→
+
+Destilado 2
+
+Modelo grande
+
+Destilado 3
+
+DeepSeek
+
+Qwen
+
+Kimi
+
+GLM
+
+MiMo
+
+20 de enero de 2025
+
+Versiones pequeñas
+
+DeepSeek publica R1, un modelo de razonamiento con pesos abiertos (licencia MIT) que compite con los mejores modelos cerrados en matemáticas y lógica.
+
+Publica también versiones pequeñas "destiladas", entrenadas para imitar al grande y que sí corren en una computadora.
+
+Laboratorios chinos
+
+Vocabulario
+
+Desde entonces, buena parte de los mejores modelos abiertos vienen de laboratorios chinos: DeepSeek, Qwen (Alibaba), Kimi (Moonshot), GLM y MiMo (Xiaomi).
+
+"Destilación" es enseñar a un modelo pequeño a partir de las respuestas de uno grande.
+
+Advertencia
+
+Usar la aplicación web de un proveedor no es lo mismo que descargar su modelo. En la web, tus datos van a sus servidores.
+
+# SLIDE
+
+2025 · Operator: la IA usa el navegador por ti
+
+Presentación
+
+Encargos
+
+Limitaciones
+
+Continuidad
+
+Enero de 2025: OpenAI presenta Operator, un agente que abre sitios web, hace clic, escribe y llena formularios.
+
+Buscar opciones de un viaje, completar un formulario, recopilar información de varias páginas.
+
+Se confunde con cambios de diseño, se bloquea con CAPTCHA y necesita supervisión en pagos y envíos.
+
+Dejó de existir como producto aparte en 2025: su capacidad pasó a ChatGPT Agent y, en 2026, a ChatGPT Work.
+
+https://ejemplo.com
+
+1
+
+Buscar opciones de un viaje
+
+▍
+
+2
+
+Abrir resultado
+
+3
+
+Llenar campo
+
+4
+
+Confirmar
+
+requiere tu confirmación
+
+# SLIDE
+
+2025 · Deep Research: un informe con fuentes en minutos
+
+2 feb 2025
+
+El agente
+
+OpenAI presenta Deep Research. Google, Anthropic y Perplexity ofrecen modos equivalentes.
+
+Busca, lee, decide qué buscar después según lo que encontró y escribe un informe con fuentes.
+
+Buscar
+
+→
+
+Leer
+
+→
+
+Nueva pista
+
+↺
+
+Antes
+
+Tiempo y alcance
+
+La persona hacía las búsquedas, abría las páginas y pegaba fragmentos en el chat.
+
+Tarda varios minutos (5 a 30) y lee decenas de fuentes.
+
+⏱ Minutos
+
+Informe con fuentes
+
+Referencia 1
+
+Limitación
+
+Referencia 2
+
+Un informe largo puede contener errores de síntesis. Hay que revisar las citas.
+
+Referencia 3
+
+# SLIDE
+
+2025 · Búsqueda normal frente a Deep Research
+
+Buscador clásico
+
+Búsqueda en el chat
+
+Deep Research
+
+Quién decide qué buscar
+
+La persona
+
+El modelo, en una sola ronda
+
+El modelo, en muchas rondas según lo que encuentra
+
+Fuentes leídas
+
+Las que la persona abra
+
+Unas pocas
+
+Decenas
+
+Tiempo
+
+Segundos
+
+Segundos
+
+Minutos
+
+Resultado
+
+Lista de enlaces
+
+Respuesta corta con citas
+
+Informe largo con citas
+
+Cuándo usarla
+
+Encontrar un sitio concreto
+
+Un dato o una pregunta puntual
+
+Revisar un tema, comparar opciones o conocer el estado del arte
+
+Error frecuente: usar Deep Research para un dato puntual (gasta minutos y cuota) o usar la búsqueda normal para revisar un tema (la síntesis queda apoyada en pocas fuentes y parece más completa de lo que es).
+
+# SLIDE
+
+2025 · Cómo pedir una investigación profunda
+
+Tema y período
+
+Investiga cómo están usando las universidades latinoamericanas la IA generativa en la evaluación de estudiantes desde 2024.
+
+Qué buscar
+
+Quiero: políticas institucionales publicadas, ejemplos concretos y riesgos señalados.
+
+Fuentes
+
+Prioriza fuentes oficiales de universidades y artículos académicos; excluye blogs comerciales.
+
+Formato
+
+Entrega un informe de dos páginas con una tabla comparativa por país y la lista de fuentes con enlace.
+
+Revisar después
+
+Abrir las tres o cuatro fuentes que sostienen las conclusiones principales.
+
+# SLIDE
+
+2025 · Vibe coding: crear software describiéndolo
+
+1
+
+Describo
+
+Origen
+
+Popularidad
+
+↓
+
+2 de febrero de 2025: Andrej Karpathy llama "vibe coding" a construir software describiendo lo que quieres, probando el resultado y pidiendo ajustes, sin leer el código.
+
+Es uno de los términos que más circula en redes y publicidad.
+
+Bien para
+
+2
+
+Se genera
+
+prototipos, herramientas personales
+
+↓
+
+Cuidado con
+
+Para quien no programa
+
+Límite
+
+3
+
+Pruebo
+
+datos de terceros, sistemas oficiales
+
+Significa que puede pedir una herramienta pequeña ("una página que calcule la nota final con estos pesos") y obtenerla funcionando.
+
+Sirve para prototipos y herramientas personales. Si algo va a manejar datos de otras personas o a usarse en producción, alguien con criterio técnico debe revisarlo.
+
+↓
+
+4
+
+Pido un ajuste
+
+# SLIDE
+
+2025 · ChatGPT Agent: investigar, navegar y actuar en un solo agente
+
+Los nombres de los productos cambian cada pocos meses; el patrón (encargo, trabajo autónomo, revisión) se mantiene.
+
+Unificación
+
+Autonomía
+
+17 de julio de 2025: OpenAI une en un solo producto la navegación de Operator, la investigación de Deep Research y la conversación de ChatGPT.
+
+El agente decide por sí mismo cuándo investigar, cuándo navegar y cuándo actuar.
+
+Ritmo de cambio
+
+En agosto de 2026, ChatGPT Agent fue retirado y su lugar lo ocupó ChatGPT Work.
+
+→
+
+→
+
+→
+
+Navegar
+
+Investigar
+
+Conversar
+
+Un solo agente
+
+Operator
+
+Agent
+
+Work
+
+ene 2025
+
+jul 2025
+
+jul 2026
+
+# SLIDE
+
+2025 · Context engineering: lo que le das determina lo que te devuelve
+
+La calidad del resultado depende menos de la frase exacta del pedido y más de qué información tiene el agente a la vista: documentos, ejemplos, instrucciones, herramientas.
+
+Documentos, ejemplos, instrucciones, herramientas
+
+Modelo
+
+Prompt
+
+Contexto
+
+La pregunta
+
+Todo lo que el modelo ve
+
+Más información no siempre es mejor: el exceso de material irrelevante distrae al modelo.
+
+Consecuencia práctica: dale al agente las fuentes correctas, un ejemplo del resultado esperado y solo las herramientas que necesita.
+
+# SLIDE
+
+2025 · Agent Skills: recetas que el agente reutiliza
+
+16 de octubre de 2025
+
+¿Qué es una skill?
+
+Anthropic presenta las Agent Skills. En diciembre de 2025 el formato se publica como estándar abierto y lo adoptan otras herramientas.
+
+Un paquete de instrucciones (y, si hace falta, plantillas o ejemplos) que explica cómo hacer bien un tipo de tarea: "cómo preparo un informe con el formato de mi universidad" o "cómo reviso un análisis de datos".
+
+Prompt
+
+Lo escribes tú cada vez.
+
+Skill
+
+El procedimiento queda guardado y se reutiliza.
+
+Carga bajo demanda
+
+Diferencias
+
+El agente la carga solo cuando la tarea lo requiere.
+
+Prompt: lo escribes tú cada vez. Skill: el procedimiento queda guardado y se reutiliza. Conector: da acceso a un servicio. Cuando ves "instala esta skill en Claude", es esto.
+
+Conector
+
+Da acceso a un servicio.
+
+# SLIDE
+
+2025 · Claude en Excel, PowerPoint y Word: la IA dentro de Office
+
+copiar y pegar al chat
+
+Excel
+
+PowerPoint
+
+Word
+
+Oct 2025
+
+Feb 2026
+
+Abr 2026
+
+Lee el libro abierto y trabaja sobre él
+
+Crea y ajusta diapositivas y gráficos
+
+Resume y revisa el documento abierto
+
+Octubre 2025
+
+Febrero 2026
+
+Claude para Excel. Lee el libro abierto (celdas, fórmulas, hojas) y trabaja directamente sobre él.
+
+Claude para PowerPoint. Crea y ajusta diapositivas y gráficos.
+
+Abril 2026
+
+Mismo patrón
+
+Claude para Word. Resume y revisa el documento abierto.
+
+Microsoft Copilot en Office y Gemini en Docs, Sheets y Slides siguen el mismo patrón.
+
+Diferencia con el chat
+
+No hay que copiar y pegar; la IA ve la estructura real del archivo.
+
+# SLIDE
+
+2026 · Gemini Notebook (antes NotebookLM): investigar sobre tus fuentes
+
+Deep Research sale a buscar en la web; el cuaderno trabaja con las fuentes que tú elegiste.
+
+PDF
+
+Enlace
+
+Respuesta con citas
+
+Según el informe, la adopción creció un 40% [1].
+
+Gemini Notebook
+
+La política de 2024 establece plazos de 18 meses [2].
+
+Herramienta de Google: subes tus documentos y conversas solo sobre ellos, con citas al fragmento exacto.
+
+[1] Artículo 3, p. 12 · [2] Informe, § 4.2
+
+Artículos · Apuntes · Transcripciones · Enlaces
+
+16 jul 2026: renombrada a Gemini Notebook, integrada con la app Gemini y con la búsqueda
+
+Audio
+
+Web abierta
+
+Tus fuentes
+
+Deep Research: sale a buscar en la web
+
+Cuaderno: trabaja con las fuentes que tú elegiste
+
+Uso típico: preparar una clase a partir de diez artículos, estudiar un informe largo o comparar documentos de política
+
+# SLIDE
+
+2025 · Kimi Agentic Slides: del tema a la presentación completa
+
+Nov 2025
+
+Tema
+
+→
+
+Investigar
+
+→
+
+Síntesis
+
+→
+
+Estructura
+
+→
+
+Diseño
+
+→
+
+Presentación
+
+Kimi (Moonshot AI) lanza Agentic Slides, que delega todo el flujo de una presentación.
+
+El flujo
+
+Tema o fuentes, investigación, síntesis, estructura narrativa, diseño visual y presentación editable.
+
+Hoy también
+
+Claude (Cowork y PowerPoint), ChatGPT Work y Gemini.
+
+Síntesis superficial
+
+Afirmaciones sin fuente
+
+Problemas típicos
+
+Demasiado texto por diapositiva
+
+Síntesis superficial, afirmaciones sin fuente, demasiado texto por diapositiva y un estilo que no es el tuyo.
+
+Estilo que no es el tuyo
+
+Consejo
+
+Entregar tus fuentes y una presentación anterior tuya como ejemplo de estilo.
+
+# SLIDE
+
+Antes de 2017
+
+2017
+
+2020
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+2026 · Delegar trabajo de oficina
+
+El agente trabaja en tus archivos, tus aplicaciones y tu navegador.
+
+# SLIDE
+
+2026 · De conversar a encargar: el cambio de rol
+
+Tu rol pasa de redactar a definir bien el encargo y revisar lo entregado, como quien coordina a un asistente.
+
+2026
+
+Agente de trabajo
+
+?
+
+Le das un objetivo y acceso a tus archivos y aplicaciones; trabaja durante minutos u horas y te entrega un resultado para revisar.
+
+2024
+
+Asistente con herramientas
+
+La IA busca y lee por ti, pero cada paso pasa por la conversación.
+
+2022
+
+Chat
+
+Tú preguntas, la IA responde y tú haces el trabajo.
+
+# SLIDE
+
+2026 · Claude Cowork: un agente para trabajo de oficina
+
+Anthropic lanza Cowork, el mismo tipo de agente que usan los programadores (Claude Code), pero con interfaz gráfica y pensado para trabajo de oficina. Das un objetivo en lenguaje natural, Claude planifica, trabaja sobre carpetas, aplicaciones y conectores, pide permiso para lo sensible y entrega un resultado revisable.
+
+Trabajo
+
+Objetivo
+
+Plan
+
+Permiso
+
+Resultado
+
+Carpetas, apps y conectores
+
+En lenguaje natural
+
+Claude planifica
+
+Para lo sensible
+
+Revisable
+
+Tareas típicas
+
+Analizar un conjunto de archivos
+
+Redactar un informe
+
+Ordenar carpetas
+
+Preparar una presentación a partir de datos
+
+Disponible en web, escritorio y móvil, en los planes de pago de Claude.
+
+# SLIDE
+
+2026 · Claude Cowork: alcance y permisos
+
+Carpetas
+
+Conectores
+
+En el escritorio, solo las que tú eliges, dentro de un entorno aislado.
+
+Drive, correo, calendario y otros servicios (MCP).
+
+Carpetas
+
+🔒
+
+Skills y plugins
+
+Aplicaciones
+
+Navegador
+
+Conectores
+
+Procedimientos y paquetes que amplían lo que sabe hacer (plugins desde febrero de 2026).
+
+Puede operar programas del escritorio, pidiendo permiso por aplicación.
+
+🔓
+
+Cowork
+
+🔓
+
+Skills
+
+🔓
+
+Navegador integrado
+
+Costo
+
+Aplicaciones
+
+Límite de uso
+
+🔒
+
+Desde agosto de 2026.
+
+Una tarea de agente consume el límite de uso mucho más rápido que una pregunta en el chat.
+
+# SLIDE
+
+2026 · Dispatch: encargar desde el móvil
+
+Marzo de 2026: Cowork añade Dispatch. Asignas o continúas una tarea desde el teléfono y Claude la ejecuta en tu computadora de escritorio.
+
+prepara el resumen semanal con los archivos de la carpeta de reportes
+
+Tarea en progreso
+
+→
+
+Requisito: la computadora debe estar encendida y con Cowork abierto. No es un agente que vive en la nube.
+
+# SLIDE
+
+2026 · ChatGPT Work y Workspace Agents: el equivalente de OpenAI
+
+Workspace Agents
+
+ChatGPT Work
+
+Abril de 2026: OpenAI presenta Workspace Agents, agentes compartidos dentro de un espacio de trabajo de equipo, con permisos de la organización.
+
+Julio de 2026: lanza ChatGPT Work, una superficie de ChatGPT para delegar tareas largas usando aplicaciones, archivos y flujos conectados.
+
+Reemplazo
+
+Mismo patrón
+
+Reemplaza a ChatGPT Agent, retirado en agosto de 2026. La navegación pasa a un navegador en la nube de ChatGPT.
+
+El patrón es el mismo que en Cowork: conversación, delegación prolongada, trabajo con navegador, archivos y aplicaciones, y producto terminado.
+
+Antes de 2017
+
+2017
+
+2020
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+Conversación
+
+Delegación
+
+Recursos
+
+Producto
+
+El usuario describe la tarea
+
+El agente planifica y ejecuta
+
+Navegador, archivos y aplicaciones
+
+Resultado terminado
+
+El patrón se repite: conversación, delegación prolongada, trabajo con navegador, archivos y aplicaciones, y producto terminado.
+
+# SLIDE
+
+2026 · Cowork y ChatGPT Work: mismo patrón, distinto ecosistema
+
+Lo que comparten
+
+Objetivo
+
+→
+
+Pasos con archivos, aplicaciones y web
+
+→
+
+Resultado para revisar
+
+Claude Cowork
+
+ChatGPT Work
+
+Objetivo
+
+→
+
+Pasos
+
+→
+
+Resultado
+
+Objetivo
+
+→
+
+Pasos
+
+→
+
+Resultado
+
+Carpetas locales y escritorio (Dispatch desde el móvil)
+
+Ecosistema de ChatGPT: aplicaciones conectadas, navegador en la nube, espacios de equipo
+
+Skills, plugins y conectores
+
+Criterio de elección: dónde están tus archivos, qué aplicaciones usa tu organización y qué plan tienes. Saber usar uno se transfiere casi por completo al otro.
+
+# SLIDE
+
+2026 · Gemini en Chrome y navegadores de agente: la IA dentro del navegador
+
+chrome
+
+Enero de 2026: Gemini en Chrome empieza a llegar a los Chromebook Plus.
+
+Agosto de 2026: Cowork incorpora su propio navegador.
+
+Asistente
+
+2026: ChatGPT ofrece un navegador en la nube para las tareas de navegación.
+
+El asistente ve la página que estás mirando.
+
+Cuidado: un sitio puede contener instrucciones ocultas dirigidas al agente. Sé prudente con tareas que mezclan navegar y tocar cuentas personales.
+
+Qué cambia: el agente puede leer, comparar y completar en sitios web sin que copies nada.
+
+# SLIDE
+
+2026 · Gemini Spark, Autopilot, dots y Muse: agentes personales 24/7
+
+Mayo 2026
+
+Junio 2026
+
+Google presenta Gemini Spark, un agente personal que corre en la nube de Google y sigue trabajando con la laptop cerrada. Se conecta con Workspace y pide aprobación antes de cada acción.
+
+Microsoft presenta Autopilot, con Scout como primer agente, siempre activo sobre Teams, Outlook, OneDrive, SharePoint y el calendario.
+
+🤖
+
+Septiembre 2026
+
+Diferencia con Cowork
+
+Siguen el mismo patrón OpenAI (dots) y Meta (Muse).
+
+Cowork trabaja en tu computadora; estos agentes viven en la nube del proveedor.
+
+24/7
+
+Preguntas abiertas
+
+Costo, privacidad y cuánta autonomía darles.
+
+Spark (may)
+
+Autopilot (jun)
+
+dots y Muse (sep)
+
+# SLIDE
+
+2026 · OpenClaw: los agentes que se instalan
+
+Para la mayoría de las personas que no programan, un agente gestionado (Cowork, Work) es la opción más segura.
+
+Nació en noviembre de 2025 como proyecto abierto (con el nombre Clawdbot) y se volvió viral en 2026.
+
+Canal de mensajería A
+
+openclaw · segundo plano
+
+Agente residente
+
+→
+
+Canal de mensajería B
+
+Se instala en tu computadora o servidor · Recuerda entre sesiones
+
+La seguridad depende de ti
+
+Canal de mensajería C
+
+Atractivo
+
+Riesgo
+
+Control total sobre los datos y sobre el modelo que usa.
+
+Quien lo instala es responsable de su seguridad. Un agente con acceso al sistema y a tus mensajes amplía mucho lo que puede salir mal.
+
+# SLIDE
+
+2026 · Qwen3.8: el mismo nombre, en tu laptop y en la nube
+
+Agosto 2026
+
+Qwen3.8-27B
+
+Alibaba publica la familia Qwen3.8.
+
+Modelo mediano, pesos abiertos Apache 2.0, entiende imágenes y textos largos. Corre en estación de trabajo y, cuantizado, en equipos modestos.
+
+Qwen3.8-27B
+
+Local
+
+Apache 2.0
+
+Qwen3.8-Max
+
+Lección general
+
+Modelo gigante, escala frontera, pensado para servicio en la nube, licencia propia.
+
+Un mismo nombre agrupa tamaños muy distintos. "Usé Qwen" no dice nada sin el tamaño ni si fue local o en la nube.
+
+Qwen3.8-Max
+
+Servicio
+
+Licencia propia
+
+# SLIDE
+
+2026 · Skills útiles para quien no programa
+
+La idea que más vale copiar es separar a quien produce de quien revisa.
+
+Marzo de 2026
+
+Abril de 2026
+
+Prompt Master
+
+Research Agent
+
+Convierte una idea vaga en un encargo claro. Pregunta lo que falta: alcance, restricciones, formato y criterio de éxito.
+
+Separa la investigación en roles (planificar, buscar, sintetizar y citar) para que la etapa de citas no cambie las conclusiones.
+
+Agosto de 2026
+
+Marzo de 2026
+
+Data Analysis Skills
+
+Content Writer
+
+Hace el análisis y luego un revisor independiente vuelve a calcular cada cifra desde los archivos guardados.
+
+Producción de contenido con perfil de marca y control de calidad.
+
+Productor
+
+→
+
+Revisor
+
+analiza
+
+verifica
+
+# SLIDE
+
+2026 · IA para educación e investigación: Claude for Education, Prism, Claude Science
+
+Abril 2025 · Estudiantes
+
+Enero 2026 · Investigadores que escriben
+
+Claude for Education para universidades. Modo de aprendizaje que guía el razonamiento del estudiante en lugar de darle la respuesta.
+
+Prism, de OpenAI. Espacio de escritura científica en LaTeX que revisa redacción, gestiona citas y busca trabajos previos; no investiga solo.
+
+Junio 2026 · Laboratorios
+
+Julio 2026 · Docentes
+
+Claude Science, orientado a ejecutar investigación con más autonomía.
+
+Claude for Teachers, para docentes de educación básica y media en Estados Unidos.
+
+Abr 2025
+
+Ene 2026
+
+Jun 2026
+
+Jul 2026
+
+Estudiantes
+
+Investigadores que escriben
+
+Laboratorios
+
+Docentes
+
+El mismo modelo, empaquetado con las herramientas y las reglas de un sector.
+
+# SLIDE
+
+Antes de 2017
+
+2017
+
+2020
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+2026 · Cómo delegar bien
+
+Lo que convierte una herramienta potente en trabajo confiable.
+
+hoy: octubre de 2026
+
+# SLIDE
+
+2026 · Las seis partes de un buen encargo
+
+Objetivo
+
+Contexto y fuentes
+
+Orden de trabajo
+
+Qué quieres lograr y para qué se usará.
+
+Qué archivos, carpetas, enlaces o datos debe usar.
+
+Objetivo
+
+Resumir el informe anual para la junta directiva.
+
+Entregable
+
+Criterio de éxito
+
+Contexto y fuentes
+
+Formato, extensión y estructura (informe de dos páginas, presentación de diez diapositivas, tabla en Excel).
+
+Cómo sabrás que quedó bien.
+
+Informe_2025.pdf, datos de ventas.xlsx, notas de reuniones.
+
+Entregable
+
+Presentación de 10 diapositivas en PowerPoint.
+
+Criterio de éxito
+
+Restricciones
+
+Ejemplo
+
+Cada diapositiva con un dato clave y una recomendación.
+
+Qué no debe hacer (no enviar correos, no modificar los originales, no usar fuentes no académicas).
+
+Un modelo del resultado esperado, si lo tienes.
+
+Restricciones
+
+No usar datos no verificados, no exceder 10 diapositivas.
+
+Ejemplo
+
+Ver modelo en carpeta compartida / ejemplo_v1.pptx.
+
+# SLIDE
+
+2026 · Encargo 1: investigar en la web y entregar un informe
+
+dice para quién es, qué fuentes usar, qué estructura entregar y qué hacer cuando falta un dato.
+
+para quién
+
+Necesito un informe para el comité académico sobre los programas de maestría en Analítica de cinco universidades de la región. Busca en sus sitios oficiales: duración, costo, modalidad, cursos de IA y perfil de egreso. Entrega un documento de Word con una tabla comparativa, un párrafo de conclusiones y la lista de enlaces consultados. Si un dato no aparece en la fuente oficial, márcalo como 'no encontrado'; no lo estimes.
+
+tema y alcance
+
+Informe comparativo
+
+fuentes
+
+Universidad
+
+Duración
+
+Costo
+
+Modalidad
+
+U1
+
+2 años
+
+—
+
+Presencial
+
+U2
+
+18 meses
+
+—
+
+Online
+
+datos a buscar
+
+U3
+
+2 años
+
+—
+
+Híbrida
+
+Conclusiones y enlaces consultados
+
+estructura
+
+si falta un dato
+
+# SLIDE
+
+Fuentes
+
+Producto
+
+Tres artículos de la carpeta 'lecturas' y notas de clase.
+
+Presentación de doce diapositivas para estudiantes de posgrado sobre evaluación de modelos predictivos.
+
+2026 · Encargo 2: preparar una presentación a partir de fuentes
+
+Estilo
+
+Reglas
+
+Usar como guía de estilo la presentación 'clase-03.pptx' de la misma carpeta.
+
+Una idea por diapositiva, poco texto y la referencia en el pie de cada diapositiva que use un artículo. No inventar datos ni gráficos que no estén en las fuentes.
+
+Encargo
+
+Miniaturas
+
+Con los tres artículos de la carpeta 'lecturas' y mis notas de clase, prepara una presentación de doce diapositivas para estudiantes de posgrado sobre evaluación de modelos predictivos. Usa como guía de estilo la presentación 'clase-03.pptx' de la misma carpeta. Una idea por diapositiva, poco texto y la referencia en el pie de cada diapositiva que use un artículo. No inventes datos ni gráficos que no estén en las fuentes.
+
+Revisar al recibirla
+
+Orden narrativo
+
+Exactitud de cada afirmación
+
+Que las referencias correspondan
+
+Que el estilo sea el tuyo
+
+# SLIDE
+
+2026 · Encargo 3: analizar una hoja de cálculo y verificar
+
+En 'notas_2026.xlsx', calcula por curso el promedio, la tasa de aprobación y la variación frente al semestre anterior. Muestra la fórmula usada para cada indicador y no modifiques la hoja original: crea una hoja nueva con los resultados. Al final, vuelve a calcular tres cifras al azar desde los datos crudos y dime si coinciden.
+
+pedir que muestre cómo calculó y que se autoverifique. Para decisiones importantes, conviene una segunda revisión en una conversación nueva o con otra herramienta.
+
+notas_2026.xlsx · Original
+
+resultados.xlsx · Nueva
+
+Curso
+
+Nota
+
+Estado
+
+Curso
+
+Promedio
+
+Tasa aprobación
+
+Variación
+
+A
+
+7.2
+
+Aprobado
+
+→
+
+A
+
+7.2
+
+68%
+
++1.3
+
+B
+
+4.1
+
+Reprobado
+
+B
+
+4.1
+
+22%
+
+-0.8
+
+C
+
+8.5
+
+Aprobado
+
+C
+
+8.5
+
+91%
+
++2.1
+
+# SLIDE
+
+2026 · La herramienta adecuada para cada tarea
+
+Chat normal
+
+Búsqueda en el chat
+
+Explicar, reescribir, traducir o resumir un texto que tienes.
+
+Un dato actual o una pregunta puntual.
+
+Deep Research
+
+Cuaderno de fuentes
+
+Revisar un tema, comparar opciones o conocer el estado del arte.
+
+Estudiar o trabajar sobre tus propios documentos: Gemini Notebook o proyecto con archivos.
+
+Asistente en Office
+
+Tarea de varios pasos
+
+Trabajar dentro de un archivo de Excel, PowerPoint o Word.
+
+Con archivos, aplicaciones y web: Claude Cowork o ChatGPT Work.
+
+Modelo local
+
+Datos sensibles que no deben salir de tu equipo: LM Studio, Ollama.
+
+# SLIDE
+
+2026 · Revisar antes de usar: lista de verificación
+
+Citas
+
+Cifras
+
+¿Existen? ¿Dicen lo que el informe afirma que dicen?
+
+¿Coinciden con la fuente o con los datos? Recalcula algunas.
+
+Fechas y nombres
+
+Alcance
+
+Son lo que más se inventa.
+
+¿Respondió a lo que pediste o a algo parecido?
+
+Acciones
+
+Estilo
+
+¿Modificó, envió o borró algo que no debía?
+
+¿Suena a ti y a tu institución?
+
+La responsabilidad del resultado sigue siendo de quien lo firma.
+
+# SLIDE
+
+2026 · Privacidad y permisos: qué compartir y qué permitir
+
+Panel de permisos
+
+Carpetas
+
+Correo
+
+Datos personales
+
+Cuentas institucionales
+
+Revisa la política de tu institución antes de subirlos a cualquier servicio en la nube.
+
+Usa cuentas institucionales cuando existan: suelen garantizar que tus datos no se usan para entrenar modelos.
+
+Calendario
+
+Navegador
+
+Acciones irreversibles
+
+Acceso mínimo
+
+Acciones irreversibles
+
+Da acceso solo a las carpetas y conectores que la tarea necesita.
+
+No autorices acciones irreversibles (enviar, pagar, borrar) sin revisar primero.
+
+Memoria
+
+Modelo local
+
+Revisa y limpia la memoria de la herramienta de vez en cuando.
+
+Para lo más sensible, un modelo local mantiene los datos en tu equipo.
+
+# SLIDE
+
+2026 · Límites de uso: por qué un agente se gasta más rápido
+
+Pregunta en el chat
+
+Un agente hace muchos pasos
+
+Deep Research
+
+Busca, lee, piensa, escribe y revisa. Cada paso consume tokens.
+
+Tarea de agente
+
+Una tarea consume más que una pregunta
+
+Usa el chat para lo simple
+
+En Cowork o en Work consume el límite del plan mucho más rápido que una pregunta en el chat.
+
+Reserva el agente para tareas con varios pasos
+
+Entrega fuentes concretas para que no busque de más
+
+Define bien el encargo para no tener que repetirlo
+
+Deep Research y razonamiento
+
+También consumen más.
+
+# SLIDE
+
+2017–2026 · Glosario (1/2)
+
+Término
+
+Qué es
+
+Año
+
+Transformer
+
+La arquitectura base de casi todos los modelos
+
+2017
+
+Token
+
+El fragmento de texto con el que el modelo mide todo
+
+—
+
+Modelo fundacional
+
+Un modelo general adaptable a muchas tareas
+
+2021
+
+Alucinación
+
+Una respuesta inventada dicha con seguridad
+
+—
+
+Open-weight
+
+Un modelo cuyo archivo se puede descargar (LLaMA)
+
+2023
+
+Modelo local
+
+Un modelo que corre en tu equipo, sin internet
+
+2023
+
+Cuantización / GGUF
+
+Reducir el modelo para que quepa en una laptop
+
+2023
+
+Multimodal
+
+Entiende más que texto, como imágenes o audio
+
+2023
+
+Ventana de contexto
+
+Cuánto lee de una vez (1M de tokens)
+
+2024
+
+RAG
+
+Responder a partir de tus documentos
+
+—
+
+Término, qué es y cuándo apareció.
+
+# SLIDE
+
+2017–2026 · Glosario (2/2)
+
+Término
+
+Qué es
+
+Cuándo
+
+Modelo de razonamiento
+
+Piensa antes de responder
+
+2024
+
+Computer use
+
+La IA usa la pantalla, el mouse y el teclado
+
+2024
+
+MCP / conector
+
+El enlace estándar entre la IA y un servicio
+
+2024
+
+Agente
+
+Modelo + herramientas + ciclo + objetivo
+
+Deep Research
+
+Investigación de muchas rondas con informe
+
+2025
+
+Vibe coding
+
+Crear software describiéndolo
+
+2025
+
+Skill
+
+Un procedimiento guardado que el agente reutiliza
+
+2025
+
+Agente de trabajo
+
+Claude Cowork y ChatGPT Work
+
+2026
+
+Agente 24/7
+
+Agente personal en la nube que sigue trabajando solo
+
+2026
+
+Qwen, DeepSeek, Kimi
+
+Familias de modelos abiertos chinos
+
+# SLIDE
+
+Antes de 2017
+
+2017
+
+2020
+
+2022
+
+2023
+
+2024
+
+2025
+
+2026
+
+De chat a agentes
+
+El patrón se mantiene
+
+En cuatro años pasamos de un chat que responde a agentes que trabajan en nuestros archivos, aplicaciones y navegador.
+
+Los nombres de los productos cambian cada pocos meses; el patrón se mantiene: encargo claro, trabajo autónomo y revisión humana.
+
+2026 · La pregunta que queda
+
+La pregunta para llevarse
+
+Siguiente paso sugerido
+
+¿Qué parte de mi trabajo puedo delegar esta semana, y cómo voy a verificar el resultado?
+
+Elegir una tarea real y repetitiva, escribir el encargo con las seis partes y probarla en Cowork o en Work.
+
+¿Qué parte de mi trabajo puedo delegar esta semana, y cómo voy a verificar el resultado?
+
+# SLIDE
+
+IA generativa y agéntica
+
+Aprender a delegar con contexto, comprobación y criterio
+
+Juan David Velásquez-Henao
+
+Facultad de Minas · Universidad Nacional de Colombia, Sede Medellín
+
+[fecha de la sesión]
+
+# SLIDE
+
+La IA generativa y agéntica no surgió de la nada.
+
+# SLIDE
+
+1975–2002: contar palabras permitió representar y clasificar textos.
+
+D1hola mundo feliz
+
+D2hola mundo cruel
+
+Matriz documento–término → clasificar textos
+
+Matriz de coocurrencias → relacionar palabras
+
+Documento
+
+hola
+
+mundo
+
+feliz
+
+cruel
+
+Polaridad
+
+hola
+
+mundo
+
+feliz
+
+cruel
+
+hola
+
+D1
+
+1
+
+1
+
+1
+
+0
+
+Positiva
+
+hola
+
+—
+
+2
+
+1
+
+1
+
+D2
+
+1
+
+1
+
+0
+
+1
+
+Negativa
+
+mundo
+
+2
+
+—
+
+1
+
+1
+
+feliz
+
+cruel
+
+feliz
+
+1
+
+1
+
+—
+
+0
+
+mundo
+
+Entradas numéricas
+
+Pronóstico
+
+cruel
+
+1
+
+1
+
+0
+
+—
+
+Regresión logística
+
+→
+
+→
+
+Positiva
+
+[1, 1, 1, 0] [1, 1, 0, 1]
+
+Coocurrencia = aparecer en el mismo documento; diagonal omitida. Los colores muestran los grupos D1 y D2, superpuestos; no son clústeres estimados con dos frases.
+
+Modelo entrenado
+
+Negativa
+
+La polaridad es la etiqueta objetivo, no una entrada. El modelo aprende con muchos textos etiquetados; estas dos frases solo ilustran el proceso.
+
+Se contaban palabras y sus relaciones; el orden de la frase se perdía.
+
+Publicaciones de referencia: Salton et al. (1975), representación vectorial; Church y Hanks (1990), asociaciones; Schütze et al. (1995), clasificadores; Pang et al. (2002), polaridad.
+
+# SLIDE
+
+2013 · Word2Vec: las palabras con contextos similares aprendían vectores similares.
+
+Aprender a predecir palabras · sin etiquetas manuales
+
+Espacio vectorial 3D
+
+d3 = 1
+
+CBOW: contexto → palabra central Skip-gram: palabra central → contexto
+
+mesa
+
+0,5
+
+Ejemplo Skip-gram: “profesor” → “el”, “explica”. Los vectores se aprenden al entrenar estas predicciones.
+
+[0, 0, 0]
+
+Palabra
+
+d1
+
+d2
+
+d3
+
+docente
+
+0,5
+
+0,5
+
+profesor
+
+0,80
+
+0,70
+
+0,20
+
+d1 = 1
+
+d2 = 1
+
+profesor
+
+docente
+
+0,75
+
+0,65
+
+0,25
+
+mesa
+
+0,20
+
+0,15
+
+0,80
+
+Similitud coseno = (u · v) / (‖u‖ ‖v‖)
+
+Cubo y tabla: vectores didácticos en 3D, no resultados medidos. Modelo Google News publicado: 300 dimensiones, 3 millones de palabras y frases; entrenado con ≈100 mil millones de palabras.
+
+profesor ↔ docente: 0,998
+
+profesor ↔ mesa: 0,469
+
+Qué cambió: las relaciones admitían operaciones: v(París) − v(Francia) + v(Italia) ≈ v(Roma).
+
+Fuentes: Mikolov et al. (2013), arXiv:1301.3781 · Proyecto original: code.google.com/archive/p/word2vec · github.com/tmikolov/word2vec.
+
+# SLIDE
+
+2013 · Word2Vec: el contexto genera pares de entrenamiento entre palabras vecinas.
+
+Paso 1 · Obtener los pares de entrenamiento · Skip-gram, ventana ±1
+
+“el profesor explica la clase”
+
+→
+
+el → profesor
+
+“el profesor explica la clase”
+
+“el profesor explica la clase”
+
+→
+
+profesor → el, profesor → explica
+
+→
+
+(una frase del corpus)
+
+“el profesor explica la clase”
+
+→
+
+explica → profesor, explica → la
+
+…
+
+Paso 2 · Contar las coocurrencias · una fila y una columna por palabra
+
+el profesor explica la clase el 0 1 0 0 0 profesor 1 0 1 0 0 explica 0 1 0 1 0 la 0 0 1 0 1 clase 0 0 0 1 0
+
+Cada celda cuenta cuántas veces la palabra de la columna es vecina de la palabra de la fila.
+
+profesor → el: 1 profesor → explica: 1
+
+Solo esta frase, ventana ±1. Diagonal = 0. Estos conteos resumen los pares de entrenamiento; no son los vectores aprendidos.
+
+Mikolov et al. (2013), arXiv:1301.3781 · Skip-gram con ventana fija ±1, ejemplo didáctico sin submuestreo.
+
+# SLIDE
+
+2013 · Word2Vec: cada par de entrenamiento ayuda a ajustar los vectores.
+
+Paso 3 · Crear los vectores iniciales
+
+Paso 4 · Se toma una palabra y se intenta predecir la vecina
+
+Paso 5 · Usar el error para ajustar
+
+Asignamos a cada palabra 3 números aleatorios pequeños.
+
+Calculamos pequeños cambios en los números para reducir el error de la predicción.
+
+profesor → explica Entrada: vector de “profesor”. Objetivo observado: “explica”.
+
+d1 d2 d3 el 0,01 −0,03 0,02 profesor −0,02 0,01 0,03 explica 0,04 0,02 −0,01 la −0,01 0,03 0,01 clase 0,02 −0,01 −0,03
+
+Valores actuales + pequeños ajustes ↓ Nuevos valores
+
+[−0,02; 0,01; 0,03]
+
+↓ Producto punto + softmax ↓ Distribución de probabilidades
+
+→
+
+→
+
+Se ajustan el vector de entrada y los pesos de salida del modelo.
+
+Elegimos d = 3 para visualizarlo; podría ser 300. Una fila por palabra del vocabulario.
+
+el
+
+25 %
+
+El gradiente indica cómo cambiar los pesos; la tasa de aprendizaje controla cuánto cambia cada valor.
+
+profesor
+
+5 %
+
+explica
+
+10 %
+
+la
+
+35 %
+
+clase
+
+25 %
+
+Cinco palabras; probabilidades ilustrativas que suman 100 %. Objetivo observado: “explica”.
+
+el → profesor · profesor → el · profesor → explica · explica → profesor · … Recorremos muchos pares del corpus; cada aparición aporta otro ajuste.
+
+↶ Repetir los pasos 4 y 5
+
+Los números dejan de ser aleatorios: se convierten en vectores aprendidos a partir de los contextos.
+
+Mikolov et al. (2013), arXiv:1301.3781 y 1310.4546. Números ilustrativos; la probabilidad no se deriva de la matriz mostrada.
+
+# SLIDE
+
+2017 · Transformer: la atención relaciona las palabras dentro de cada secuencia.
+
+Del vector fijo a la representación contextual
+
+“El animal no cruzó la calle porque estaba cansado.”
+
+animal
+
+calle
+
+estaba
+
+cansado
+
+Para interpretar “cansado”, importa su relación con “animal”, aunque haya palabras entre ambos.
+
+Relaciones ponderadas por atención
+
+Cada token combina información de otros tokens mediante autoatención.
+
+Grosor ilustrativo; no son pesos medidos de un modelo.
+
+La arquitectura combina atención e información de posición. El trabajo original la demostró en traducción y permitió más paralelismo que los modelos recurrentes.
+
+Qué cambió: la representación depende de la secuencia. Esta arquitectura se convirtió en la base de BERT y GPT.
+
+Vaswani et al. (2017), Attention Is All You Need · arXiv:1706.03762. La atención tenía antecedentes; el hito es la arquitectura Transformer.
+
+# SLIDE
+
+2018 · BERT: el contexto a ambos lados permite distinguir significados.
+
+Aprender con texto sin etiquetas de tarea
+
+Me senté en el
+
+[MÁSCARA]
+
+del parque.
+
+La misma palabra · dos contextos
+
+“Retiré dinero del banco.”
+
+contexto izquierdo →
+
+← contexto derecho
+
+“Me senté en el banco del parque.”
+
+BERT · codificador Transformer bidireccional
+
+Word2Vec asigna un vector a “banco”. BERT produce representaciones diferentes según la frase que lo rodea.
+
+Recuperar la palabra oculta: banco
+
+Ejemplo del objetivo de palabras enmascaradas. El BERT original también aprendía a relacionar pares de oraciones.
+
+Modelo preentrenado
+
+→
+
+Ajuste con ejemplos de la tarea
+
+→
+
+Polaridad · preguntas y respuestas
+
+Qué cambió: se podía adaptar un modelo ya preentrenado a múltiples tareas con una capa de salida adicional.
+
+Devlin et al. (octubre de 2018; publicación en NAACL, 2019), BERT · arXiv:1810.04805. Ejemplos didácticos en español.
+
+# SLIDE
+
+2019 · Sentence-BERT: embeddings para búsqueda semántica
+
+Solución SBERT
+
+1
+
+Estructuras siamesas sobre BERT
+
+2
+
+Producción de embeddings por frase
+
+Problema anterior
+
+BERT comparaba pares de frases
+
+3
+
+Comparación con similitud coseno
+
+Encontrar el par más similar en 10.000 frases requería ~50 millones de inferencias (~65 horas)
+
+SBERT · modelo siamés para embeddings
+
+Problema reducido de ~65 horas a ~5 segundos
+
+Manteniendo la precisión de BERT
+
+Texto → modelo de embeddings
+
+→
+
+vector de dimensión fija
+
+→
+
+similitud coseno
+
+→
+
+búsqueda, clustering, RAG
+
+Qué cambió: embeddings permiten búsqueda semántica práctica para RAG.
+
+Límites observados
+
+El modelo y el idioma importan: un modelo inglés ordena mal consultas en español
+
+La similitud coseno mide cercanía semántica aprendida, no verdad ni relevancia para tu tarea
+
+Para colecciones muy grandes se usan índices vectoriales aproximados
+
+Reimers y Gurevych (27-ago-2019), Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks (arXiv 1908.10084)
+
+# SLIDE
+
+Una misma capacidad transforma tareas distintas.
+
+Formación: aprender y comprobar
+
+Primero, las capacidades comunes.
+
+Programas: coordinar y documentar
+
+Después, tres ámbitos de aplicación con objetivos y responsables distintos.
+
+Vicerrectoría: priorizar y escalar
+
+El criterio compartido: definir la tarea, aportar contexto y comprobar la entrega. Cada bloque mostrará qué cambia en su propio ámbito.
+
+Recorrido de la charla: conceptos comunes → formación → gestión de programas → vicerrectoría.
+
+# SLIDE
+
+Delegar con criterio empieza por saber qué pedir y qué comprobar.
+
+Delegación con control
+
+6
+
+Delegar flujos de trabajo
+
+5
+
+Investigar con fuentes
+
+4
+
+Apoyo puntual
+
+Instrucciones reutilizables
+
+3
+
+Trabajar con documentos propios
+
+2
+
+Redactar y resumir
+
+1
+
+Preguntar
+
+Generativa prepara respuestas y borradores.
+
+Elija el nivel más simple que resuelva la tarea. Para practicar, use información pública o ficticia; confirme permisos antes de cargar documentos internos.
+
+Agéntica realiza varios pasos con herramientas y permisos.
+
+# SLIDE
+
+Durante décadas, las máquinas contaron palabras. Contar no es entender.
+
+¿Qué cambia cuando importa el sentido de una frase y no solo sus palabras?
+
+Minería de texto clásica
+
+Un modelo de lenguaje
+
+clase
+
+profesor
+
+mal
+
+Claridad del profesor · positivo · “Explica muy bien y responde todas las dudas.”
+
+tareas
+
+bien
+
+difícil
+
+nada
+
+explica
+
+Carga de trabajo · mixto · “Muchas tareas, pero se aprende.”
+
+examen
+
+Dificultad · positivo · “Difícil, pero no estuvo nada mal la clase.”
+
+Bolsa de palabras y TF-IDF · Sentimiento con diccionarios · Tópicos con LDA (2003) · Un modelo por tarea
+
+“No estuvo nada mal la clase” → un conteo aislado puede sugerir algo negativo; el contexto permite interpretar el elogio.
+
+Idea clave El contexto de las palabras cambia su interpretación; una respuesta también necesita comprobarse.
+
+Pruébelo
+
+Gemini (cuenta institucional): “Te pego comentarios ficticios de evaluación docente. Agrúpalos en temas, indica el sentimiento de cada tema y cita dos comentarios textuales por tema.”
+
+Bolsa de palabras el texto como conteo de palabras, sin importar el orden.
+
+Análisis de sentimiento clasificar un texto como positivo, negativo o neutro.
+
+Salton (TF-IDF, años setenta); Blei, Ng y Jordan (LDA, 2003).
+
+# SLIDE
+
+Un modelo de lenguaje genera la respuesta un token a la vez.
+
+“Nos vemos mañana en la ___”
+
+clase
+
+0,62
+
+El ciclo de generación
+
+reunión
+
+0,21
+
+Lee el contexto → calcula probabilidades → selecciona un token → lo agrega al texto → repite.
+
+oficina
+
+0,09
+
+otros
+
+0,08
+
+El token elegido no tiene que ser siempre el más probable: depende del método de selección.
+
+Tokens y probabilidades simplificados e ilustrativos; no son una medición del modelo.
+
+Token fragmento de texto que el modelo procesa o genera.
+
+Pruébelo
+
+Idea clave generar texto plausible no equivale a comprobar que sea verdadero.
+
+Complete una frase en dos contextos distintos: “Nos vemos mañana en la…” después de hablar de un curso y después de hablar de una reunión. Observe cómo cambia la continuación.
+
+Adaptación de docs.pptx, diapositiva 63 · Hugging Face, documentación de generación de texto.
+
+# SLIDE
+
+El modelo ya existía. Lo nuevo fue poder conversar con él.
+
+Nueva conversación
+
+¿Qué es un modelo de lenguaje?
+
+30 de noviembre de 2022
+
+Un modelo de lenguaje es un sistema que aprendió, a partir de enormes cantidades de texto, a predecir la palabra que sigue. Con eso puede responder preguntas,
+
+Detrás: entrenamiento con retroalimentación humana para seguir instrucciones
+
+Escribe un mensaje…
+
+Prompt la instrucción que se le da al modelo.
+
+Pruébelo
+
+RLHF entrenamiento con retroalimentación humana para que siga instrucciones y converse.
+
+ChatGPT: “Redacta un correo de bienvenida para la nueva cohorte de la Maestría en Analítica: tono cordial, máximo 150 palabras. Usa la fecha y el enlace de la ficha adjunta. Si falta alguno, pregúntamelo antes de redactar.”
+
+OpenAI, InstructGPT (2022); lanzamiento de ChatGPT (30 nov. 2022).
+
+# SLIDE
+
+Un texto convincente todavía puede contener errores.
+
+Martínez, L. y Gómez, R. (2021). Deserción en programas de posgrado en Colombia: un análisis longitudinal. Revista Colombiana de Educación Superior, 14(2), 45–67. https://doi.org/10.4312/rces.2021.0142
+
+No existe
+
+Inventa referencias
+
+No conoce lo reciente
+
+Olvida el comienzo de una conversación larga
+
+Junio de 2023: un tribunal de Nueva York sanciona a abogados que citaron casos inventados por ChatGPT en una demanda contra Avianca.
+
+Alucinación respuesta plausible y bien redactada, pero falsa.
+
+Pruébelo
+
+Fecha de corte hasta cuándo llegan los datos con que se entrenó.
+
+Cualquier chat sin búsqueda web: “Dame cinco artículos sobre deserción en posgrado en Colombia, con su DOI.” Luego verifique cada DOI: algunos no existirán.
+
+Ventana de contexto cuánto texto puede tener en cuenta a la vez.
+
+Mata v. Avianca, Tribunal del Distrito Sur de Nueva York (junio de 2023).
+
+# SLIDE
+
+Con búsqueda web, el modelo deja de recordar y empieza a consultar.
+
+“¿Qué es una tesis de maestría de profundización en la UNAL?”
+
+Sin búsqueda web · ilustración
+
+Con búsqueda web · ilustración
+
+Una tesis de profundización es un trabajo de investigación aplicada, de unas 80 páginas, que el estudiante sustenta ante un jurado de dos evaluadores para obtener el título.
+
+En la UNAL, la Maestría de Profundización no tiene tesis sino trabajo final, que puede tener como máximo el 20 % de los créditos del plan.
+
+[1] Acuerdo 033 de 2007 del CSU
+
+Sin fuente
+
+Dic. 2022 – feb. 2023 Perplexity y Bing Chat: respuestas con fuentes
+
+2023–2025 ChatGPT, Gemini y Claude agregan búsqueda web
+
+Resuelve “no sabe lo reciente”; no resuelve “hay que verificar”
+
+Idea clave Buscar aporta evidencia externa; la persona comprueba que la fuente respalda la respuesta.
+
+Pruébelo
+
+En ChatGPT, Gemini o Claude, haga la pregunta “¿Qué es una tesis de maestría de profundización en la UNAL?” con la búsqueda web desactivada y luego activada. Compare: según el Acuerdo 033 de 2007, la Maestría de Profundización tiene trabajo final, no tesis.
+
+Búsqueda web (grounding) el modelo busca antes de responder y ancla la respuesta en fuentes con enlace.
+
+Acuerdo 033 de 2007 del Consejo Superior Universitario, artículo 11.
+
+# SLIDE
+
+No hay una IA: hay muchos modelos, y algunos se pueden descargar.
+
+En la nube
+
+En tu computador
+
+Llama
+
+Mistral
+
+GPT-4
+
+Claude
+
+Gemini
+
+Qwen
+
+DeepSeek
+
+Mar. 2023 GPT-4, Claude y Bard compiten en la nube
+
+Feb.–sep. 2023 LLaMA, Llama 2 y Mistral: pesos abiertos
+
+Jul. 2023 Ollama: un modelo en tu computador con un comando
+
+Pesos abiertos el modelo se puede descargar y ejecutar en un equipo propio.
+
+Pruébelo
+
+Local vs. nube dónde se ejecuta el modelo; revise también conexiones, accesos y copias.
+
+Ollama en el portátil: en la terminal, “ollama run gpt-oss:20b”; con un modelo ya descargado, desconecte la red y pídale “resume esta acta ficticia en cinco puntos”.
+
+Fine-tuning ajustar un modelo existente con datos propios.
+
+# SLIDE
+
+Ya no solo lee: ve, escucha y habla.
+
+Apuntes · Regresión lineal
+
+Regresión lineal →
+
+Modelo: y = β₀ + β₁x + ε
+
+Sep. 2022 Whisper: transcribe voz, y se puede descargar
+
+y = β0 + β1x + ε
+
+Supuestos: linealidad, independencia, varianza constante, normalidad
+
+supuestos: lineal, indep.,
+
+→
+
+varianza cte, normal
+
+Sep. 2023 Entiende imágenes
+
+¡ojo! outliers + R² ≠ causal
+
+Cuidado: valores atípicos; un R² alto no implica causalidad
+
+May. 2024 Conversa por voz en tiempo real
+
+Multimodal entiende o genera texto, imagen, audio y video.
+
+Pruébelo
+
+Gemini en el celular: fotografíe el tablero al final de la clase y pida “convierte esto en apuntes ordenados, con los conceptos clave en negrita”.
+
+# SLIDE
+
+El modelo solicita una herramienta; el programa controla su ejecución.
+
+“¿Cuántas solicitudes hay pendientes?”
+
+Modelo → programa
+
+{"herramienta": "contar_solicitudes", "estado": "pendiente"}
+
+Programa
+
+Valida permisos y argumentos. Consulta la tabla autorizada.
+
+Programa → modelo
+
+{"total": 12, "fuente": "tabla de práctica"}
+
+Modelo → usuario
+
+“Hay 12 solicitudes pendientes en la tabla de práctica.”
+
+Herramienta función que el programa puede ejecutar a petición del modelo.
+
+Pruébelo
+
+Idea clave escribir una solicitud no concede permisos ni ejecuta por sí solo una acción.
+
+Con una tabla ficticia, pida contar solicitudes pendientes y citar la fuente. Compruebe el conteo. Sin la tabla o una herramienta habilitada, el modelo no debe inventarlo.
+
+Adaptación de docs.pptx, diapositiva 65 · Ejemplo ficticio: solicitudes, herramienta y resultado ilustrativos.
+
+# SLIDE
+
+El modelo responde con los fragmentos que el sistema recupera.
+
+Al preparar la colección
+
+Embeddings
+
+Documentos
+
+Fragmentos
+
+Índice
+
+Representaciones para buscar similitud
+
+Fuentes y versiones identificadas
+
+Texto con página y procedencia
+
+Almacena y permite recuperar
+
+En cada pregunta
+
+Pregunta
+
+Recuperación
+
+Contexto
+
+Respuesta
+
+Qué necesita saber la persona
+
+Busca fragmentos pertinentes
+
+Pregunta + fragmentos encontrados
+
+Usa la evidencia y cita su origen
+
+Si falta el fragmento correcto, puede faltar la evidencia necesaria para responder.
+
+RAG recuperar información y añadirla al contexto antes de generar la respuesta.
+
+Pruébelo
+
+Idea clave consultar documentos no equivale a reentrenar el modelo con ellos.
+
+Con una norma pública cargada, pida artículo y fragmento. Abra la cita: ¿contiene realmente lo que afirma la respuesta? Si no aparece evidencia suficiente, pida que lo indique.
+
+Adaptación de docs.pptx, diapositiva 67 · Esquema de RAG con recuperación semántica.
+
+# SLIDE
+
+Pensar antes de responder también se puede entrenar.
+
+¿Qué ocurre cuando responder exige comparar alternativas y comprobar condiciones?
+
+Ejemplo ilustrativo; no es una transcripción del razonamiento interno.
+
+Sep. 2024 Primer modelo presentado como “de razonamiento”
+
+Resumen del procedimiento
+
+Hay ocho electivas; tres tienen menos de diez inscritos previstos.
+
+Ene. 2025 DeepSeek-R1: razonamiento con pesos abiertos
+
+Descarto esas tres; quedan cinco con diez o más.
+
+Verifico que no se crucen en horario: ninguna se cruza.
+
+Puede ayudar en tareas difíciles; el tiempo, el costo y la mejora dependen del modelo y del caso.
+
+Recomiendo abrir estas cinco electivas: Series de tiempo, Aprendizaje profundo, Visualización, Optimización y Analítica de texto.
+
+Idea clave Dar tiempo al modelo para resolver puede ayudar; la explicación por sí sola no demuestra corrección.
+
+Pruébelo
+
+Claude o ChatGPT con razonamiento: “Con estas inscripciones previstas por electiva, ¿qué combinación de cinco electivas evita grupos de menos de diez estudiantes? Resume los criterios usados y comprueba que la selección los cumple.”
+
+Modelo de razonamiento dedica tiempo a “pensar” antes de responder.
+
+# SLIDE
+
+Elegir lo más popular no basta cuando hay restricciones que cumplir.
+
+¿Qué 3 electivas maximizan las inscripciones, con un costo total de máximo 11 y sin cruces de horario?
+
+Selección por popularidad · ilustración
+
+Electiva
+
+Inscritos
+
+Costo
+
+Horario
+
+Prompt directo para comparar: “Con estos datos y restricciones, elige las tres electivas. Da solo la selección.”
+
+A · Series
+
+30
+
+5
+
+Lun. 18 h
+
+Atajo: A + B + C → 82 inscripciones
+
+B · Redes
+
+28
+
+5
+
+Lun. 18 h
+
+Parece atractivo, pero cuesta 14 y A se cruza con B. No es viable.
+
+C · Texto
+
+24
+
+4
+
+Mar. 18 h
+
+CoT · procedimiento guiado e ilustración
+
+“Con estos datos y restricciones, resuelve paso a paso: descarta cruces, verifica el costo de cada terna y compara las opciones viables. Resume la comprobación.”
+
+D · Visualización
+
+20
+
+3
+
+Mié. 18 h
+
+E · Optimización
+
+18
+
+3
+
+Mar. 18 h
+
+A + D + E → 68 inscripciones
+
+Solo quedan ADE y BDE: ambas cuestan 11 y no tienen cruces. ADE suma 68; BDE, 66.
+
+Idea clave: primero compruebe viabilidad; después compare el beneficio. Soluciones ilustrativas: un prompt directo también puede acertar y pedir pasos no garantiza exactitud.
+
+Chain-of-thought (CoT) cadena de pensamiento: guiar la resolución con pasos intermedios o ejemplos resueltos.
+
+Pruébelo
+
+Compare ambos prompts en el mismo modelo. Verifique las diez combinaciones con una tabla o un script; una explicación convincente puede ser incorrecta.
+
+Caso ficticio · CoT: Wei et al. (2022), arxiv.org/abs/2201.11903.
+
+# SLIDE
+
+Si una persona lo hace con mouse y teclado, un agente puede intentarlo.
+
+tramites.universidad.edu.co/solicitudes
+
+Oct. 2024 Computer use
+
+Solicitud estudiantil
+
+2025 Agentes que navegan sitios web y completan tareas
+
+1
+
+Programa
+
+Maestría en Ingeniería – Analítica
+
+2
+
+Trámite
+
+Cancelación de asignatura
+
+El agente actúa con tus permisos.
+
+3
+
+Asignatura
+
+Series de tiempo
+
+Computer use / browser use el agente opera la pantalla o el navegador como una persona.
+
+Pruébelo
+
+ChatGPT Agent o Claude en Chrome: “Entra al sitio público del SNIES y lista los programas de maestría en analítica activos en Antioquia, con su código.”
+
+# SLIDE
+
+MCP conecta una aplicación con servicios mediante un protocolo común.
+
+Cliente MCP
+
+Aplicación
+
+Servidor MCP
+
+Servicio
+
+Mantiene la conexión con el servidor
+
+Donde trabaja la persona
+
+Expone capacidades disponibles
+
+Archivos, datos o funciones
+
+Descubrir
+
+Invocar
+
+¿Qué herramientas hay y qué argumentos reciben?
+
+Enviar una petición y recibir un resultado.
+
+Proceso local · comunicación mediante entrada y salida estándar.
+
+HTTP · comunicación con un servidor local o remoto.
+
+MCP protocolo para conectar aplicaciones de IA con herramientas, recursos y plantillas de instrucciones.
+
+Pruébelo
+
+Antes de activar un conector, identifique qué servicio alcanza, qué puede leer o modificar y qué autenticación utiliza. Habilite solo lo necesario para la tarea.
+
+Idea clave un estándar facilita la integración; no autoriza por sí solo el acceso a un sistema.
+
+Adaptación de docs.pptx, diapositiva 66 · Model Context Protocol, arquitectura y transportes.
+
+# SLIDE
+
+Ahora podemos delegar.
+
+# SLIDE
+
+La IA puede pasar de redactar un borrador a trabajar para completarlo.
+
+¿Qué cambia entre pedir una respuesta y delegar una tarea?
+
+Generativa
+
+Agéntica
+
+Verificar
+
+Decidir
+
+→
+
+Pregunta
+
+Respuesta
+
+Objetivo
+
+Modelo
+
+Resultado
+
+Observar
+
+Usar herramienta
+
+Idea clave Un agente combina decisiones, herramientas y observaciones; la persona define el objetivo y sus límites.
+
+Pruébelo
+
+Compare. Generativa: “Redacta un resumen a partir de estas notas.” Agéntica: “Revisa los documentos de esta carpeta de práctica, compara sus cifras y guarda un informe con fuentes y pendientes. No cambies los originales.”
+
+Agente un modelo que decide, usa herramientas y observa en ciclo hasta cumplir un objetivo.
+
+# SLIDE
+
+Un flujo puede fijar los pasos y delegar solo la interpretación.
+
+Calcular
+
+Interpretar
+
+Comprobar
+
+Decidir
+
+Una fórmula obtiene el cambio entre dos periodos.
+
+El modelo redacta una explicación con los datos y sus límites.
+
+Se contrastan cifras, referencias y afirmaciones.
+
+La persona revisa la entrega y resuelve los pendientes.
+
+Pruébelo
+
+Dibuje su proceso actual. Marque dónde basta una regla y dónde hace falta interpretar. Delegue primero ese paso acotado.
+
+Anthropic, Building effective agents (2024).
+
+# SLIDE
+
+Una tarde de búsqueda, en minutos. Las fuentes, igual hay que revisarlas.
+
+Informe · Panorama de programas
+
+Fuentes
+
+[1] ✓ verificada
+
+[2] ✓ verificada
+
+Varias rondas de búsqueda, lectura y síntesis
+
+[3] ⚠ revisar
+
+Uso académico: programas similares, tendencias, normativa
+
+[4] ✓ verificada
+
+[5] ✓ verificada
+
+Deep research agente que investiga en varias rondas y entrega un informe con fuentes.
+
+Pruébelo
+
+Gemini Deep Research (cuenta institucional): “Panorama de maestrías en analítica de negocios en América Latina que incluyan IA agéntica en su plan de estudios: universidad, modalidad, créditos y fuente.”
+
+# SLIDE
+
+La misma pregunta en Gemini: una respuesta en segundos o un informe en minutos.
+
+“¿Qué maestrías en analítica en Colombia se ofrecen en modalidad híbrida y cómo se comparan en créditos?”
+
+Deep Research
+
+Búsqueda normal
+
+Primero muestra un plan de investigación que se puede editar
+
+Segundos
+
+Pocas fuentes
+
+Varios minutos
+
+Una respuesta de un párrafo o una lista
+
+Decenas de fuentes leídas
+
+Sirve para un dato puntual
+
+Un informe de varias páginas con tabla y referencias
+
+Sirve para un panorama que alimenta una decisión
+
+En ambos casos, las fuentes se revisan antes de usarlas.
+
+Pruébelo
+
+Gemini (cuenta institucional): escriba la pregunta una vez como chat normal y otra vez activando Deep Research. Compare cuántas fuentes usó cada uno y qué programas encontró que el otro no.
+
+# SLIDE
+
+Un agente repite el ciclo: proponer, ejecutar, observar y decidir.
+
+Harness programa que organiza el trabajo del modelo con contexto, herramientas y permisos.
+
+Pruébelo
+
+En una carpeta de práctica: “Lista las cifras sin fuente, prepara un informe y muestra qué archivos leíste. No cambies los originales. Detente si falta acceso o información”.
+
+Coding agent agente que trabaja sobre archivos de un proyecto, incluidos código y documentos.
+
+Diagrama conceptual · Anthropic, Building effective agents (2024).
+
+# SLIDE
+
+Claude Code no es un modelo: es un harness que usa un modelo.
+
+¿Qué parte del producto genera la respuesta y qué parte organiza el trabajo?
+
+Claude Code
+
+opencode local
+
+Superficie: por dónde se opera (chat, terminal, Office)
+
+terminal
+
+terminal
+
+Harness: lo pone a trabajar en un ciclo (Claude Code, Codex, opencode, Cowork)
+
+Claude Code
+
+opencode
+
+Modelo: predice y genera (Claude, GPT, Gemini, Qwen)
+
+Claude
+
+Qwen
+
+Runtime: dónde corre (nube, tu computador)
+
+nube
+
+tu computador
+
+Idea clave La terminal puede estar en su computador y el modelo en la nube. La columna local supone un modelo y un runtime configurados en el equipo.
+
+Modelo · Harness · Superficie · Runtime las cuatro capas de cualquier producto de IA.
+
+# SLIDE
+
+Delegar a otro agente exige acordar qué recibe y qué debe devolver.
+
+Pruébelo
+
+Ejecute en paralelo solo tareas independientes. Dos agentes editando el mismo documento pueden producir conflictos; más agentes también consumen más tiempo y recursos.
+
+Notas de referencia: Subagentes en Claude Code (2025); Building effective agents (2024).
+
+# SLIDE
+
+El informe empieza a mejorar cuando aclaramos qué debe resolver.
+
+¿Por qué el mismo modelo puede entregar un texto genérico o una respuesta útil?
+
+Pedido abierto
+
+El mismo encargo, con criterios claros
+
+“Haz un informe de estos datos.”
+
+Objetivo
+
+Prepara una nota que identifique qué cambio entre periodos merece investigarse.
+
+No define para quién, con qué datos ni qué decisión debe apoyar.
+
+Contexto
+
+Compara los dos periodos de la tabla adjunta. Usa el diccionario de variables para interpretarla.
+
+Fuentes
+
+Usa solo estos datos. Cita la fila de cada cifra; no atribuyas causas sin evidencia.
+
+Salida
+
+Máximo 200 palabras: cambio absoluto, cambio porcentual y preguntas pendientes.
+
+Ejemplo
+
+Formato esperado: “De 100 a 80: −20 unidades; −20 % respecto a 100”.
+
+Faltantes
+
+Si no se pueden comparar los periodos, indica qué información falta antes de concluir.
+
+Más texto no asegura más calidad: seleccione información relevante. El modelo y las herramientas disponibles también limitan lo que puede resolver.
+
+Idea clave La calidad del pedido se puede revisar: objetivo, información, criterios y una salida comprobable.
+
+Pruébelo
+
+Antes de enviar: ¿el pedido aclara el objetivo, aporta la información necesaria y permite comprobar la entrega? “Actúa como experto” no sustituye esos elementos.
+
+Ingeniería de contexto seleccionar instrucciones, fuentes, herramientas e historial útiles para la tarea.
+
+Anthropic, “Effective context engineering for AI agents” (2025) y “Best practices for prompt engineering for 2026”.
+
+# SLIDE
+
+Una skill se consulta por partes, según lo que la tarea necesita.
+
+Nombre y descripción
+
+Al descubrirla
+
+Identificar
+
+El agente identifica para qué sirve: “preparar borradores de actas de comité”.
+
+Instrucciones de SKILL.md
+
+Al activarla
+
+Instruir
+
+Lee cómo separar acuerdos, responsables, plazos y datos que faltan.
+
+Cuando hace falta
+
+Plantillas, referencias y scripts
+
+Apoyar
+
+Consulta el ejemplo aprobado o ejecuta una comprobación si está permitida.
+
+Skill instrucción reutilizable con recursos de apoyo que el agente consulta para una tarea.
+
+Pruébelo
+
+Idea clave la carga progresiva evita incorporar todos los recursos a cada conversación.
+
+Con una skill habilitada para actas: “Usa la plantilla y el ejemplo aprobado con esta transcripción ficticia. No copies sus nombres ni acuerdos; marca fechas o responsables faltantes”.
+
+Adaptación de docs.pptx, diapositiva 68 · Agent Skills, especificación de carga progresiva.
+
+# SLIDE
+
+Lo que los agentes hicieron con el código en 2025, lo hacen con el trabajo de oficina en 2026.
+
+Correo
+
+Hoja de cálculo
+
+Documento
+
+Respondiendo solicitudes · 3 de 7
+
+Redactando informe de gestión
+
+Consolidando matrícula
+
+Ene.–mar. 2026 Claude Cowork y Dispatch: delegar desde el escritorio o el celular
+
+Ene. 2026 Gemini en Chrome
+
+Abr.–jul. 2026 Workspace Agents y ChatGPT Work
+
+Pruébelo
+
+Claude Cowork: “Organiza la carpeta Material del curso por semanas, renombra los archivos con un formato común y crea un índice en Word.”
+
+# SLIDE
+
+Agentes que nunca se apagan. ¿Cuánto acceso les daríamos?
+
+2:14
+
+Abiertos OpenClaw, Hermes Agent, OpenJarvis
+
+De proveedores Gemini Spark, Microsoft Autopilot, OpenAI dots, Meta Muse
+
+Agente · hace 3 min
+
+Respondí 4 correos
+
+¿Qué permisos tiene?
+
+Agente · hace 20 min
+
+¿Dónde guarda la memoria?
+
+Agendé una reunión
+
+Agente · hace 1 h
+
+¿Quién responde por lo que hace?
+
+Pagué una factura
+
+Agente personal persistente corre siempre, recuerda, accede a tus cuentas y actúa por iniciativa propia.
+
+# SLIDE
+
+Los proveedores ya diseñan productos para universidades y docentes.
+
+Abr. 2025
+
+Ene. 2026
+
+Jun. 2026
+
+Jul. 2026
+
+Hoy
+
+Claude for Education
+
+Prism: escritura científica en LaTeX
+
+Claude Science
+
+Claude for Teachers
+
+Gemini para Educación, la licencia que ya tenemos
+
+# SLIDE
+
+¿Qué podemos hacer con todo esto?
+
+# SLIDE
+
+Seis preguntas antes de creerle a un anuncio.
+
+Patrocinado
+
+¡Tu agente con MCP que lo hace todo!
+
+4¿Qué permisos pide?
+
+1¿Qué capa es?
+
+5¿Es producto, vista previa o demo?
+
+2¿Qué modelo usa por debajo?
+
+✦ ✦ ✦
+
+3¿Dónde quedan los datos?
+
+6¿Qué problema mío resuelve?
+
+Pruébalo gratis
+
+# SLIDE
+
+El contexto útil se prepara y se actualiza durante el trabajo.
+
+Preparar
+
+Seleccionar
+
+Trabajar
+
+Conservar
+
+Encargo, fuentes con versión y plantilla de entrega.
+
+Leer los archivos pertinentes para la pregunta actual.
+
+Añadir resultados de herramientas y evidencia encontrada.
+
+Guardar decisiones y pendientes; retirar material irrelevante.
+
+Pruébelo
+
+“Antes de redactar, identifica qué archivos necesitas, qué versión usarás y qué falta. Si hay dos versiones contradictorias, muéstrame el conflicto.”
+
+Anthropic, Effective context engineering for AI agents (2025).
+
+# SLIDE
+
+Una skill enseña el procedimiento; una herramienta permite actuar.
+
+Pruébelo
+
+MCP puede conectar la aplicación con herramientas y recursos. Instalar una skill no habilita por sí solo un servicio ni concede permisos. Compruebe qué herramientas están disponibles.
+
+Agent Skills: conceptos y artefactos reutilizables (2025); Model Context Protocol, arquitectura.
+
+# SLIDE
+
+Para empezar no necesita instalar conectores; para ampliar, revise sus permisos.
+
+App de Claude
+
+Claude Code
+
+Codex, Gemini CLI y otros
+
+Subir la skill como ZIP en la sección de skills y activarla
+
+Carpeta ~/.claude/skills/, comando /plugin, o claude mcp add para un conector
+
+Su propia carpeta de skills; mismo formato SKILL.md
+
+¿Quién la publica?
+
+Leí el SKILL.md y los scripts
+
+¿Qué permisos y claves pide? ¿Cuánto cuesta?
+
+La probé con información pública
+
+Sé cómo desinstalarla
+
+Ruta sin programación: use primero las funciones habilitadas en su cuenta. Para instalar conectores o gestionar claves, pida apoyo técnico.
+
+Clave de API credencial con la que un programa usa un servicio y se cobra el consumo; no es la suscripción.
+
+Anthropic, centro de ayuda “Use skills in Claude”; Perplexity, documentación MCP.
+
+# SLIDE
+
+Formar para trabajar con IA.
+
+# SLIDE
+
+La IA prepara una actividad; el profesor comprueba qué enseña y evalúa.
+
+Formación en analítica
+
+Entrada
+
+Encargo
+
+Revisión docente
+
+Un objetivo de aprendizaje
+
+Dos versiones del problema
+
+Resolver antes de asignar
+
+Use un problema propio y una rúbrica. Ejemplo: interpretar una regresión sin confundir asociación y causalidad.
+
+“Propón dos versiones, una rúbrica y errores frecuentes. Conserva el objetivo y explica qué evidencia de aprendizaje exige cada versión.”
+
+Compruebe solución, dificultad y rúbrica. El profesor adapta la actividad y decide cómo evaluarla.
+
+Pruébelo
+
+Use un problema ficticio o propio. Acepte el borrador solo si puede resolver ambas versiones y cada criterio de la rúbrica evalúa el objetivo.
+
+# SLIDE
+
+La IA agéntica toca cada fase del trabajo analítico, no solo el modelado.
+
+Formación en analítica
+
+Problema de negocio
+
+Ciclo de vida
+
+Problema analítico
+
+Despliegue
+
+Datos
+
+Modelado
+
+Metodología
+
+DataOps
+
+MLOps
+
+Código limpio
+
+INFORMS, dominios de la certificación Certified Analytics Professional.
+
+# SLIDE
+
+El problema llega desordenado. La IA ayuda a ordenarlo, no a decidirlo.
+
+Formación en analítica
+
+¿por qué caen las ventas? revisar inventario
+
+Asunto: ventas Hay más devoluciones y faltan productos…
+
+→
+
+Problema central
+
+Síntomas
+
+Causas posibles
+
+Supuestos
+
+Modelo local con tus documentos
+
+Caen las ventas de una tienda ficticia
+
+Más devoluciones y faltantes
+
+Precio; disponibilidad de productos
+
+Dos personas proponen causas aún no comprobadas
+
+Entrevista ficticia: “Creo que es el precio”… “No, faltan existencias”…
+
+Caso de curso: consultar entrevistas y reportes ficticios, con cita a la fuente
+
+Traducir la meta de negocio en una tarea analítica con entradas, salidas y métrica
+
+Pruébelo
+
+Open WebUI con un modelo local: pegue transcripciones y correos y pida “extrae el problema central, los síntomas, las posibles causas y los supuestos de cada persona, en una tabla”.
+
+# SLIDE
+
+El análisis exploratorio debe dejar código y hallazgos comprobables.
+
+Formación en analítica
+
+Proyecto de curso: ventas · salida ilustrativa con datos ficticios
+
+> Analiza ventas_sinteticas.csv sin modificar el original
+
+● Escribí eda.py · lo ejecuté · guardé 3 gráficos en figuras/
+
+Código y gráficos que se ejecutan desde cero
+
+Cada hallazgo incluye cálculo y limitación
+
+El analista confirma claves y significado de las variables
+
+✓ Cinco hallazgos:
+
+El 8 % de “precio” está vacío
+
+“Precio” y “ventas” correlacionan −0,41
+
+32 filas duplicadas
+
+Una tienda tiene muy pocos registros
+
+Hay cantidades negativas por comprobar
+
+Pruébelo
+
+opencode o Claude Code: “Con ventas_sinteticas.csv, comprueba tipos, claves, faltantes y duplicados. Guarda código y gráficos; para cada hallazgo incluye cálculo y limitación. No modifiques el original.”
+
+# SLIDE
+
+Un modelo solo mejora el análisis si supera una comparación justa.
+
+Formación en analítica
+
+Comparación
+
+Tiempo
+
+Errores
+
+¿Supera la línea base?
+
+¿Funciona en datos posteriores?
+
+¿En qué grupos falla?
+
+Defina la métrica antes del experimento. Compare ambos métodos en el mismo conjunto de evaluación.
+
+Para un pronóstico de ventas, use solo información disponible al emitirlo. Reserve periodos posteriores para evaluar.
+
+Revise errores por tienda o categoría. Documente la incertidumbre y los casos en que no debe usarse.
+
+Pruébelo
+
+El agente propone y ejecuta el experimento. El analista revisa la separación de datos, comprueba las métricas y decide si la mejora justifica la complejidad.
+
+# SLIDE
+
+Del notebook que funciona a la solución que sigue funcionando.
+
+Formación en analítica
+
+1
+
+2
+
+3
+
+4
+
+Despliegue
+
+Monitoreo
+
+Alerta de degradación
+
+Recalibración
+
+Proyecto de ventas: explicar resultados y límites
+
+Definir responsable y qué hacer si falla
+
+Conservar una versión anterior para volver atrás
+
+# SLIDE
+
+Un proyecto de portafolio debe ejecutarse desde cero y explicar sus límites.
+
+Formación en analítica
+
+Antes
+
+Después
+
+analisis_final_v3.ipynb
+
+Proyecto de ventas: módulos con pruebas
+
+datos/
+
+[12]
+
+df2 = df[df.x > 0]
+
+→
+
+src/
+
+[7]
+
+temp = df2.merge(df_old)
+
+Comparar resultados antes y después de refactorizar
+
+pruebas/
+
+[31]
+
+# no borrar!!
+
+pipeline.yml
+
+Documentar datos, ejecución y límites
+
+[3]
+
+final_v3 = temp.dropna()
+
+README.md
+
+[ ]
+
+modelo.fit(final_v3)
+
+Pruébelo
+
+“Refactoriza este notebook sin cambiar sus resultados. Antes de editar, propone cómo comprobar equivalencia; deja un README para ejecutarlo desde cero.”
+
+# SLIDE
+
+Las mejores universidades ya enseñan a construir agentes. La Facultad de Minas también.
+
+Formación en analítica
+
+2024
+
+2025
+
+2026
+
+Facultad de Minas
+
+Berkeley: Large Language Model Agents
+
+Berkeley: Advanced LLM Agents Stanford: Self-Improving AI Agents
+
+Stanford: Agentic AI, Engineering AI Agents Carnegie Mellon: Agentic Technology
+
+IA generativa y agéntica para analítica (propuesta)
+
+Ingeniería de sistemas agénticos diseñar, construir, evaluar y operar sistemas de agentes con rigor de ingeniería.
+
+# SLIDE
+
+La evaluación debe mostrar qué comprende el estudiante, incluso cuando usa IA.
+
+Formación en analítica
+
+Calificar el proceso y el criterio
+
+Declarar qué se hizo con IA y qué se verificó
+
+Calificar el producto
+
+Entregable final
+
+→
+
+Decisiones y por qué
+
+Los detectores de texto generado no son confiables para sancionar
+
+Redacción
+
+Verificación de fuentes
+
+Formato
+
+Defender una decisión y resolver una variante del problema
+
+Defensa oral
+
+# SLIDE
+
+La formación debe enseñar a construir y a comprobar.
+
+Formación en analítica
+
+Trabajo del estudiante
+
+Evaluación docente
+
+Datos → código → resultado
+
+→
+
+Evidencia → defensa → variante
+
+Repetir el cálculo y explicar sus límites.
+
+Comprobar comprensión y justificar las decisiones.
+
+El proyecto debe poder ejecutarse y el estudiante debe poder explicarlo.
+
+# SLIDE
+
+Gestionar un programa exige criterio.
+
+# SLIDE
+
+La primera herramienta es la que la institución habilita para su tarea.
+
+Gestión de programas
+
+Acceso
+
+Fuentes
+
+Alcance
+
+Confirme la cuenta y el servicio
+
+Empiece con información pública
+
+Pida un borrador verificable
+
+Compruebe con el área responsable qué funciones están habilitadas. La marca o una cuenta institucional no bastan para autorizar cualquier uso.
+
+Para aprender, use una norma publicada o un caso ficticio. Confirme el entorno permitido antes de cargar información interna.
+
+Indique qué documento necesita, qué fuentes usar y qué debe quedar pendiente para una persona.
+
+Pruébelo
+
+Sin programar: abra el chat autorizado, adjunte una fuente pública y pida un resumen con página y fragmento. Abra las citas y compruébelas.
+
+# SLIDE
+
+Elija la función que necesita antes de elegir una herramienta.
+
+Gestión de programas
+
+Consulta
+
+Investigación
+
+Ejecución
+
+Entender un documento
+
+Comparar fuentes
+
+Trabajar sobre archivos
+
+Un chat con archivos permite pedir resúmenes y borradores. Compruebe cada cita en el original.
+
+Use una función de búsqueda o investigación. Pida enlaces, fechas y diferencias; confirme los hallazgos en las fuentes.
+
+Un agente con herramientas puede realizar pasos y preparar entregables. Limite permisos y revise los cambios antes de usarlos.
+
+Pruébelo
+
+Empiece por una tarea pequeña. Confirme acceso, límites y condiciones de uso en su servicio; pida apoyo técnico si necesita conectores o acceso a sistemas.
+
+# SLIDE
+
+Ejecutar en local también exige controlar conexiones, archivos y accesos.
+
+Gestión de programas
+
+Actas y expedientes: confirme primero el entorno autorizado para esa información
+
+El área técnica verifica capacidad del equipo, conexiones y herramientas externas
+
+Notas
+
+Actas
+
+Solicitudes
+
+Controle quién accede a los archivos y dónde quedan registros y copias
+
+Local no significa automáticamente autorizado.
+
+# SLIDE
+
+La IA prepara la respuesta; la dependencia conserva la decisión.
+
+Gestión de programas
+
+Entrada
+
+Borrador
+
+Revisión
+
+Consulta ficticia y norma pública
+
+Artículo, fragmento y faltantes
+
+Comprobar antes de enviar
+
+Adjunte la norma y una consulta sin datos personales. Indique fechas y antecedentes que sí conoce.
+
+“Redacta un borrador. Cita artículo y fragmento; separa lo que dice la norma de tu interpretación. Si faltan datos, indícalos.”
+
+Abra la fuente, confirme vigencia y pertinencia. La persona responsable valida y autoriza la respuesta.
+
+Pruébelo
+
+Aceptación: todas las citas existen, los hechos coinciden con el caso y los faltantes están explícitos. Si algo no se puede comprobar, deje el borrador pendiente.
+
+# SLIDE
+
+Del microcurrículo al comité curricular, con evidencia a la mano.
+
+Gestión de programas
+
+Revisar la alineación entre resultados de aprendizaje del programa y de las asignaturas
+
+Comparar el programa con programas similares del país y del mundo
+
+Gemini Notebook
+
+Perplexity o Deep Research
+
+Analizar matrícula, deserción y graduación
+
+Preparar el material del comité curricular
+
+Gemini en Sheets
+
+Gemini en Docs y Slides
+
+Pruébelo
+
+Gemini Notebook con el proyecto educativo del programa y los microcurrículos: “Relaciona cada resultado de aprendizaje del programa con las asignaturas que lo evidencian. Cita documento y apartado. Devuelve: resultado → evidencia → falta por comprobar. Si no hay evidencia, marca “no encontrada”; no la supongas.”
+
+# SLIDE
+
+Un documento largo se continúa desde avances guardados y verificables.
+
+Gestión de programas
+
+Pruébelo
+
+“Guarda el borrador y un archivo de avance: terminado, pendiente, fuentes y decisiones. En la próxima sesión, léelos antes de editar.” La conversación anterior no sustituye estos archivos.
+
+Aplicación al caso curricular · Notas de referencia: Agent Skills, estado y memoria.
+
+# SLIDE
+
+El registro de ejecución permite entender y corregir un fallo.
+
+Gestión de programas
+
+Pruébelo
+
+“Si falla una lectura, informa qué archivo y qué error encontraste. No repitas indefinidamente ni inventes el contenido. Guarda el avance y señala qué necesitas para continuar.”
+
+Notas de referencia: Agent Skills, fallos y recuperación; observabilidad.
+
+# SLIDE
+
+El agente propone y avisa. La persona decide.
+
+Gestión de programas
+
+“El trabajo final queda en 22,7 %; el máximo del Acuerdo 033 de 2007 es 20 %.”
+
+“Elegir las asignaturas del plan de investigación no me corresponde.”
+
+Actualiza el borrador y muestra qué secciones cambió
+
+Agente
+
+↓
+
+↑
+
+↓
+
+Revisa los cambios antes de aprobarlos
+
+Persona
+
+Decide cómo ajustar los créditos
+
+Lo lleva al comité asesor
+
+# SLIDE
+
+Si sirve para una actualización curricular, sirve para una autoevaluación.
+
+Gestión de programas
+
+Plantilla
+
+Fuentes normativas
+
+Autoevaluación con fines de acreditación
+
+Evidencia
+
+Renovación de registro calificado
+
+Reglas de redacción
+
+Informes de gestión y planes de mejoramiento
+
+Secciones fijas
+
+Revisión humana
+
+Acuerdo 02 de 2020 del CESU (factores de evaluación).
+
+# SLIDE
+
+Un agente revisor también necesita casos que permitan comprobar su criterio.
+
+Gestión de programas
+
+Caso conocido
+
+Caso incompleto
+
+Caso contradictorio
+
+Evidencia suficiente
+
+Falta evidencia
+
+Las fuentes discrepan
+
+Una propuesta ficticia cumple la rúbrica. La revisión debe localizar los fragmentos que respaldan cada criterio.
+
+Se retira el presupuesto. El agente debe señalar la ausencia; una redacción convincente no demuestra viabilidad.
+
+Dos documentos declaran créditos distintos. El agente debe exponer el conflicto y dejar la decisión pendiente.
+
+Pruébelo
+
+Compare la revisión con una clave preparada por una persona. Tras cambiar instrucciones o modelo, repita todos los casos. Otro modelo puede apoyar la revisión; compruebe también fuentes y resultados esperados.
+
+Notas de referencia: Skills, testing y evaluación. Casos ilustrativos, sin resultados medidos.
+
+# SLIDE
+
+Una tarea se domina cuando podemos comprobarla, corregirla y retomarla.
+
+Gestión de programas
+
+Ejecutar
+
+Comprobar
+
+Retomar
+
+Cinco casos ficticios
+
+Corregir contra una clave
+
+Continuar en otra sesión
+
+Abra la regla y las consultas. Pida acción, artículo, fragmento y datos faltantes por caso. Guarde el resultado como borrador.
+
+Abra la clave de comprobación. Corrija el caso que falle y repita los cinco. Guarde los resultados y los pendientes.
+
+Abra la guía de continuación. Use los archivos guardados para resolver dos casos nuevos y comprobar una fuente ausente.
+
+Pruébelo
+
+Con un agente de archivos, pida guardar las entregas; con un chat, guárdelas usted. Acepte solo acciones y citas correctas, sin datos inventados. No envíe respuestas ni modifique registros reales.
+
+# SLIDE
+
+La gestión del programa entrega evidencia y decisiones pendientes.
+
+Gestión de programas
+
+La tabla
+
+La norma
+
+El borrador
+
+Cálculo comprobado
+
+Fuente localizada
+
+Pendientes visibles
+
+La comparación de matrícula tiene una base definida. Podemos repetirla y explicar qué significa.
+
+El artículo y el fragmento se pueden abrir. La interpretación queda sujeta a revisión del responsable.
+
+Lo que no tiene evidencia permanece como pregunta. El comité conserva la decisión.
+
+Cierre del bloque de programas: cada afirmación tiene respaldo y cada decisión pendiente tiene un responsable.
+
+Síntesis ilustrativa de gestión de programas; no es una medición de resultados.
+
+# SLIDE
+
+Desde la vicerrectoría, ¿cómo escalar?
+
+# SLIDE
+
+La ventaja se construye en la oferta, en la operación y en la proyección.
+
+Vicerrectoría · decisiones institucionales
+
+Oferta académica
+
+Operación académica
+
+Proyección externa
+
+Programas con IA agéntica en el núcleo
+
+Documentos, evaluaciones y acreditación con agentes
+
+Diplomados y cursos de extensión para otras facultades, empresas y el sector público
+
+# SLIDE
+
+No partimos de cero.
+
+Vicerrectoría · decisiones institucionales
+
+2014 · Especialización en Analítica
+
+→
+
+2018 · Maestría en Ingeniería – Analítica
+
+→
+
+2026 · Actualización con IA agéntica
+
+Pioneros en analítica de posgrado en el país
+
+Propuestas con IA agéntica en el núcleo: Maestría en Analítica y Especialización en Ingeniería de Software Agéntica
+
+Docencia propia en IA generativa y agéntica
+
+Licencia institucional de Gemini y un caso real construido con agentes
+
+Facultad de Minas, documento de actualización de la Maestría en Ingeniería – Analítica (2026).
+
+# SLIDE
+
+Un piloto pequeño permite decidir si conviene escalar.
+
+Vicerrectoría · decisiones institucionales
+
+1
+
+2
+
+3
+
+4
+
+5
+
+Elegir
+
+Preparar
+
+Probar
+
+Comparar
+
+Reutilizar
+
+Una tarea frecuente y una persona responsable
+
+Fuentes, permisos y criterio de aceptación
+
+Cinco casos ficticios con resultados conocidos
+
+Calidad, costo y tiempo total, incluida la revisión
+
+Guardar la instrucción y la plantilla solo si mejoran la tarea
+
+# SLIDE
+
+Lo que no se mide, no se sostiene.
+
+Vicerrectoría · decisiones institucionales
+
+Por medir
+
+Por medir
+
+Entregables aceptados sin corrección sustancial
+
+Tiempo total por tarea, incluida la revisión
+
+Por medir
+
+Por medir
+
+Errores relevantes que quedan en la entrega
+
+Costo por tarea, incluida la revisión
+
+Compare la misma tarea con y sin IA antes de ampliar el piloto. Estos son indicadores propuestos; aún no hay resultados medidos.
+
+# SLIDE
+
+Poder hacerlo no basta.
+
+# SLIDE
+
+La herramienta la decide el dato, no la costumbre.
+
+Vicerrectoría · decisiones institucionales
+
+Pública
+
+normativa publicada, programas de otras universidades
+
+Herramienta habilitada para esa tarea
+
+Interna
+
+Servicio institucional autorizado para ese uso
+
+borradores, informes, material de curso
+
+Sensible
+
+Entorno aprobado, acceso restringido y datos mínimos
+
+notas, solicitudes, actas, datos personales
+
+Si no está claro qué entorno puede usar, practique con información ficticia y consulte al área responsable.
+
+# SLIDE
+
+Delegar con criterio también se aprende.
+
+Elija una tarea de su ámbito, defina quién responde por ella y compruebe el resultado antes de ampliar su uso.
+
+Elija
+
+Prepare
+
+Compruebe
+
+Una tarea pequeña
+
+Contexto y fuentes
+
+Antes de usarla
+
+Un borrador, una comparación o una consulta con una pregunta concreta.
+
+Explique el objetivo, aporte información pertinente y defina la entrega esperada.
+
+Abra la evidencia, revise los errores y conserve la decisión que le corresponde.
+
+Esta semana: pruebe una tarea con y sin IA. Compare el resultado y el tiempo total de revisión. Guarde lo que funcione.

@@ -76,14 +76,22 @@ diapositiva(`
       font-weight: 600;
       background: color-mix(in srgb, var(--fondo) 80%, transparent);
     }
-    .s037 .destacado {
+    .s037 .rejilla.c4 {
       margin-top: 40px;
-      font-size: var(--t-texto);
-      font-weight: 600;
+    }
+    .s037 .caja {
+      padding: 20px 24px;
+      border: var(--borde);
+      border-radius: var(--radio);
+      background: var(--fondo);
       line-height: 1.3;
-      padding-left: 24px;
-      border-left: 2px solid var(--acento);
-      color: var(--texto);
+      font-size: var(--t-rotulo);
+    }
+    .s037 .caja strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: var(--t-pequeno);
+      color: var(--acento);
     }
   </style>
   <h2>2025 · Operator: la IA usa el navegador por ti</h2>
@@ -115,7 +123,24 @@ diapositiva(`
         <div class="etiqueta-confirmacion">requiere tu confirmación</div>
       </div>
     </div>
+    <div class="rejilla c4">
+      <div class="caja">
+        <strong>Presentación</strong>
+        Enero de 2025: OpenAI presenta Operator, un agente que abre sitios web, hace clic, escribe y llena formularios.
+      </div>
+      <div class="caja">
+        <strong>Encargos</strong>
+        Buscar opciones de un viaje, completar un formulario, recopilar información de varias páginas.
+      </div>
+      <div class="caja">
+        <strong>Limitaciones</strong>
+        Se confunde con cambios de diseño, se bloquea con CAPTCHA y necesita supervisión en pagos y envíos.
+      </div>
+      <div class="caja">
+        <strong>Continuidad</strong>
+        Dejó de existir como producto aparte en 2025: su capacidad pasó a ChatGPT Agent y, en 2026, a ChatGPT Work.
+      </div>
+    </div>
   </div>
-  <p class="destacado">Enero de 2025: OpenAI presenta Operator, un agente que abre sitios web, hace clic, escribe y llena formularios para completar una tarea. Ejemplos de encargo: buscar opciones de un viaje, completar un formulario, recopilar información de varias páginas. Limitaciones: se confunde cuando cambia el diseño de un sitio, se bloquea con los CAPTCHA y necesita supervisión en pagos y envíos. Operator dejó de existir como producto aparte en 2025: su capacidad pasó a ChatGPT Agent y, en 2026, a ChatGPT Work.</p>
 </section>
 `);
